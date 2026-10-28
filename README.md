@@ -6,12 +6,14 @@ Single static page for `https://ramgupta07.github.io` (GitHub Pages user site, r
 
 | Path | What it is |
 |---|---|
-| `index.html` | The whole site: inline CSS, a few lines of JS for the theme toggle, Google Fonts (Inter, Plus Jakarta Sans). |
+| `index.html` | The whole site: inline CSS, inline JS for the theme toggle, mobile menu, scroll-spy, skills toggles, copy-email and back-to-top. |
+| `assets/fonts/` | Self-hosted Latin subsets of Inter (variable, 400–700) and Instrument Serif (400), from Google Fonts. |
 | `assets/photo.webp` | 480 × 480 head-and-shoulders crop of my profile photo. |
-| `assets/og-image.png` | 1200 × 630 link-preview image, rendered with Playwright. |
+| `assets/og-image.jpg` | 1200 × 630 link-preview image (JPEG, quality 80). |
 | `assets/favicon.svg` | "RG" monogram. |
+| `assets/apple-touch-icon.png` | 180 × 180 home-screen icon rendered from the favicon with square corners (iOS rounds them itself). |
 | `assets/Ram_Gupta_Resume.pdf` | Copy of my current base resume. Re-copy it whenever the base resume changes. |
-| `screenshots/` | Review screenshots (desktop 1440 px, mobile 390 px, light and dark). Not needed on the live site. |
+| `screenshots/` | Review screenshots for every tested viewport, light and dark. Not needed on the live site. |
 | `.nojekyll` | Tells GitHub Pages to serve the files as they are. |
 
 ## Preview locally
@@ -20,7 +22,7 @@ Open `index.html` in a browser, or run `python3 -m http.server 8000` in this fol
 
 ## Theme
 
-Light by default; dark when the visitor's system prefers it. The toggle in the nav overrides both and is remembered in `localStorage`. To make dark the default for everyone, swap the token blocks: move the dark values onto bare `:root` and the light values into the `prefers-color-scheme: light` and `[data-theme="light"]` blocks.
+Always light by default, whatever the visitor's system setting: a small script in `<head>` sets `data-theme="light"` before the page renders. Dark applies only after the visitor uses the toggle in the nav, and that choice is remembered in `localStorage`. To make dark the default instead, change that script to set `dark`, and to switch to light only when `localStorage` holds `light`.
 
 ## Content rules
 

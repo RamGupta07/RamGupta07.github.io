@@ -2,64 +2,143 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ram Gupta · Full-Stack Software Engineer</title>
-<meta name="description" content="Ram Gupta, full-stack software engineer: 4 years building a multi-tenant B2B SaaS with PHP/Laravel, Python/FastAPI, Vue 3 + TypeScript, MySQL and AWS. On the AI team since July 2026. Available immediately.">
+<meta name="description" content="Ram Gupta, full-stack software engineer: 4 years building a multi-tenant B2B SaaS at Recruit CRM with PHP/Laravel, Python/FastAPI, Vue 3 + TypeScript, MySQL and AWS, ending on the AI team building LLM features. Available immediately.">
 <meta name="author" content="Ram Gupta">
-<meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f6f7fa">
 <link rel="canonical" href="https://ramgupta07.github.io/">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://ramgupta07.github.io">
+<meta property="og:site_name" content="Ram Gupta">
+<meta property="og:url" content="https://ramgupta07.github.io/">
 <meta property="og:title" content="Ram Gupta · Full-Stack Software Engineer">
-<meta property="og:description" content="4 years building a multi-tenant B2B SaaS: PHP/Laravel, Python/FastAPI, Vue 3 + TypeScript, MySQL, AWS. LLM features since July 2026. Available immediately.">
-<meta property="og:image" content="https://ramgupta07.github.io/assets/og-image.png">
+<meta property="og:description" content="4 years building a multi-tenant B2B SaaS: PHP/Laravel, Python/FastAPI, Vue 3 + TypeScript, MySQL, AWS. Built LLM features on the AI team in 2026. Available immediately.">
+<meta property="og:image" content="https://ramgupta07.github.io/assets/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Ram Gupta, Full-Stack Software Engineer">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Ram Gupta · Full-Stack Software Engineer">
-<meta name="twitter:description" content="4 years building a multi-tenant B2B SaaS: PHP/Laravel, Python/FastAPI, Vue 3 + TypeScript, MySQL, AWS. Available immediately.">
-<meta name="twitter:image" content="https://ramgupta07.github.io/assets/og-image.png">
+<meta name="twitter:description" content="4 years building a multi-tenant B2B SaaS: PHP/Laravel, Python/FastAPI, Vue 3 + TypeScript, MySQL, AWS. Built LLM features on the AI team in 2026. Available immediately.">
+<meta name="twitter:image" content="https://ramgupta07.github.io/assets/og-image.jpg">
+<meta name="twitter:image:alt" content="Ram Gupta, Full-Stack Software Engineer">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ram Gupta",
+  "jobTitle": "Full-Stack Software Engineer",
+  "url": "https://ramgupta07.github.io/",
+  "sameAs": ["https://www.linkedin.com/in/ramgupta07", "https://github.com/RamGupta07"],
+  "address": { "@type": "PostalAddress", "addressLocality": "Indore", "addressCountry": "IN" }
+}
+</script>
 
 <script>
   (function () {
-    document.documentElement.setAttribute('data-theme', 'light');
-    try {
-      var saved = localStorage.getItem('theme');
-      if (saved === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
-    } catch (e) {}
+    var theme = 'light';
+    try { if (localStorage.getItem('theme') === 'dark') theme = 'dark'; } catch (e) {}
+    document.documentElement.setAttribute('data-theme', theme);
+    if (theme === 'dark') document.querySelector('meta[name="theme-color"]').setAttribute('content', '#090d16');
   })();
 </script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+<link rel="preload" href="assets/fonts/instrument-serif-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 
 <style>
-  :root {
-    --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    --font-display: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+    src: url("assets/fonts/inter-var-latin.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: "Instrument Serif";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("assets/fonts/instrument-serif-400-latin.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* Fallbacks scaled to the web fonts' measured widths and line metrics, so the swap barely shifts layout. */
+  @font-face {
+    font-family: "Inter Fallback";
+    src: local("Arial"), local("Helvetica Neue"), local("Roboto");
+    size-adjust: 106.3%;
+    ascent-override: 91.3%;
+    descent-override: 22.6%;
+    line-gap-override: 0%;
+  }
+  @font-face {
+    font-family: "Instrument Serif Fallback";
+    src: local("Georgia"), local("Times New Roman");
+    size-adjust: 76%;
+    ascent-override: 130.3%;
+    descent-override: 40.8%;
+    line-gap-override: 0%;
+  }
 
-    --bg: #f6f7fb;
+  :root {
+    --font-body: "Inter", "Inter Fallback", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --font-display: "Instrument Serif", "Instrument Serif Fallback", Georgia, serif;
+
+    --fs-xs: 0.8125rem;
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-md: 1.0625rem;
+    --fs-lg: clamp(1.125rem, 1.05rem + 0.35vw, 1.3rem);
+    --fs-xl: clamp(1.35rem, 1.2rem + 0.7vw, 1.75rem);
+    --fs-2xl: clamp(2.1rem, 1.6rem + 2.2vw, 3.25rem);
+    --fs-3xl: clamp(3.1rem, 2.1rem + 4.4vw, 5.5rem);
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
+    --space-7: 48px;
+    --space-8: 64px;
+    --section-pad: clamp(52px, 6.5vw, 92px);
+    --radius-sm: 8px;
+    --radius: 14px;
+    --radius-lg: 20px;
+    --header-h: 64px;
+    --wrap-pad: max(16px, min(4vw, 40px));
+    --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+    --bg: #f6f7fa;
+    --bg-alt: #eef1f6;
     --surface: #ffffff;
-    --surface-2: #f0f3f8;
-    --border: #dfe4ec;
-    --text: #0f172a;
-    --muted: #46536a;
+    --surface-2: #f3f5f9;
+    --border: #e0e5ed;
+    --border-strong: #c7d0dd;
+    --text: #0b1220;
+    --text-2: #273143;
+    --muted: #4b5567;
     --accent: #1d4ed8;
-    --accent-hover: #1e3fae;
+    --accent-strong: #1e3fae;
     --accent-ink: #ffffff;
     --accent-soft: #e8eeff;
     --accent-soft-ink: #1e3a8a;
+    --accent-line: rgba(29, 78, 216, 0.28);
     --ok: #14532d;
     --ok-soft: #dcfce7;
     --ok-dot: #16a34a;
     --ring: #2563eb;
-    --hero-glow: rgba(37, 99, 235, 0.10);
-    --shadow: 0 1px 2px rgba(15, 23, 42, 0.05), 0 8px 24px rgba(15, 23, 42, 0.06);
+    --grid: rgba(11, 18, 32, 0.04);
+    --glow: rgba(37, 99, 235, 0.08);
+    --scrim: rgba(11, 18, 32, 0.42);
+    --shadow-sm: 0 1px 2px rgba(11, 18, 32, 0.05);
+    --shadow: 0 1px 2px rgba(11, 18, 32, 0.04), 0 8px 24px -10px rgba(11, 18, 32, 0.12);
+    --shadow-lg: 0 2px 4px rgba(11, 18, 32, 0.04), 0 22px 44px -18px rgba(11, 18, 32, 0.24);
 
     --svg-box: #ffffff;
     --svg-stroke: #c8d1de;
@@ -69,449 +148,809 @@
 
     --level-strong-bg: #e8eeff;
     --level-strong-ink: #1e3a8a;
-    --level-working-bg: #e7f6ee;
+    --level-working-bg: #e3f5ea;
     --level-working-ink: #14532d;
-    --level-light-bg: #f1f2f5;
-    --level-light-ink: #3f4a5c;
+    --level-light-bg: #eceff4;
+    --level-light-ink: #3d4757;
 
     --show-moon: inline-block;
     --show-sun: none;
     color-scheme: light;
   }
 
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #0b1020;
-      --surface: #121a2c;
-      --surface-2: #18223a;
-      --border: #26324d;
-      --text: #e7ecf5;
-      --muted: #a6b2c8;
-      --accent: #8ab4ff;
-      --accent-hover: #a8c7ff;
-      --accent-ink: #0b1020;
-      --accent-soft: #1a2849;
-      --accent-soft-ink: #c3d6ff;
-      --ok: #a7f3c0;
-      --ok-soft: #10301f;
-      --ok-dot: #4ade80;
-      --ring: #8ab4ff;
-      --hero-glow: rgba(138, 180, 255, 0.10);
-      --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.25);
-      --svg-box: #121a2c;
-      --svg-stroke: #33415f;
-      --svg-accent-fill: #18264a;
-      --svg-accent-stroke: #8ab4ff;
-      --svg-arrow: #8b97ad;
-      --level-strong-bg: #1a2849;
-      --level-strong-ink: #c3d6ff;
-      --level-working-bg: #10301f;
-      --level-working-ink: #a7f3c0;
-      --level-light-bg: #1e2638;
-      --level-light-ink: #c2cad8;
-      --show-moon: none;
-      --show-sun: inline-block;
-      color-scheme: dark;
-    }
-  }
 
   :root[data-theme="dark"] {
-    --bg: #0b1020;
-    --surface: #121a2c;
-    --surface-2: #18223a;
-    --border: #26324d;
-    --text: #e7ecf5;
-    --muted: #a6b2c8;
-    --accent: #8ab4ff;
-    --accent-hover: #a8c7ff;
-    --accent-ink: #0b1020;
-    --accent-soft: #1a2849;
-    --accent-soft-ink: #c3d6ff;
+    --bg: #090d16;
+    --bg-alt: #0d121d;
+    --surface: #121a29;
+    --surface-2: #172034;
+    --border: #232e45;
+    --border-strong: #34425f;
+    --text: #e9edf5;
+    --text-2: #ccd4e2;
+    --muted: #a3aec2;
+    --accent: #8db2ff;
+    --accent-strong: #b3cbff;
+    --accent-ink: #081022;
+    --accent-soft: #17254a;
+    --accent-soft-ink: #c6d7ff;
+    --accent-line: rgba(141, 178, 255, 0.32);
     --ok: #a7f3c0;
-    --ok-soft: #10301f;
+    --ok-soft: #0f2e1d;
     --ok-dot: #4ade80;
-    --ring: #8ab4ff;
-    --hero-glow: rgba(138, 180, 255, 0.10);
-    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.25);
-    --svg-box: #121a2c;
-    --svg-stroke: #33415f;
+    --ring: #8db2ff;
+    --grid: rgba(148, 163, 184, 0.05);
+    --glow: rgba(110, 150, 255, 0.1);
+    --scrim: rgba(2, 5, 12, 0.66);
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 10px 26px -12px rgba(0, 0, 0, 0.55);
+    --shadow-lg: 0 2px 4px rgba(0, 0, 0, 0.35), 0 24px 48px -18px rgba(0, 0, 0, 0.7);
+    --svg-box: #121a29;
+    --svg-stroke: #34425f;
     --svg-accent-fill: #18264a;
-    --svg-accent-stroke: #8ab4ff;
+    --svg-accent-stroke: #8db2ff;
     --svg-arrow: #8b97ad;
-    --level-strong-bg: #1a2849;
-    --level-strong-ink: #c3d6ff;
-    --level-working-bg: #10301f;
+    --level-strong-bg: #17254a;
+    --level-strong-ink: #c6d7ff;
+    --level-working-bg: #0f2e1d;
     --level-working-ink: #a7f3c0;
-    --level-light-bg: #1e2638;
-    --level-light-ink: #c2cad8;
+    --level-light-bg: #1c2538;
+    --level-light-ink: #c4ccda;
     --show-moon: none;
     --show-sun: inline-block;
     color-scheme: dark;
   }
 
+  /* Base */
   *, *::before, *::after { box-sizing: border-box; }
-  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--header-h) + 16px);
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  html.is-menu-open, html.is-menu-open body { overflow: hidden; }
   body {
     margin: 0;
     background: var(--bg);
     color: var(--text);
-    font: 400 16px/1.65 var(--font-body);
+    font: 400 var(--fs-base)/1.65 var(--font-body);
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
   }
   img, svg { max-width: 100%; }
-  a { color: var(--accent); text-underline-offset: 3px; }
-  a:hover { color: var(--accent-hover); }
-  :focus-visible { outline: 3px solid var(--ring); outline-offset: 3px; border-radius: 6px; }
-  h1, h2, h3 { font-family: var(--font-display); line-height: 1.2; margin: 0; letter-spacing: -0.015em; }
-  p { margin: 0; }
+  a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  a:hover { color: var(--accent-strong); }
+  :focus-visible { outline: 2px solid var(--ring); outline-offset: 3px; border-radius: 6px; }
+  h1, h2, h3, h4 { margin: 0; text-wrap: balance; }
+  p { margin: 0; text-wrap: pretty; }
+  ul, ol { margin: 0; padding: 0; }
+  summary { list-style: none; cursor: pointer; }
+  summary::-webkit-details-marker { display: none; }
+  .visually-hidden {
+    position: absolute !important; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0;
+  }
 
   .skip {
-    position: absolute; left: 16px; top: -60px; z-index: 100;
+    position: absolute; left: 16px; top: -80px; z-index: 200;
     background: var(--accent); color: var(--accent-ink); padding: 10px 14px; border-radius: 8px; font-weight: 600;
   }
-  .skip:focus { top: 12px; }
+  .skip:focus { top: 12px; color: var(--accent-ink); }
 
-  .wrap { max-width: 1120px; margin: 0 auto; padding-inline: clamp(16px, 4vw, 32px); }
+  .wrap { width: 100%; max-width: 1180px; margin: 0 auto; padding-inline: var(--wrap-pad); }
 
-  /* Nav */
-  .nav {
-    position: sticky; top: 0; z-index: 50;
-    background: color-mix(in srgb, var(--bg) 86%, transparent);
-    backdrop-filter: saturate(160%) blur(10px);
-    -webkit-backdrop-filter: saturate(160%) blur(10px);
-    border-bottom: 1px solid var(--border);
-  }
-  .nav__inner { display: flex; align-items: center; gap: 20px; min-height: 64px; }
-  .brand { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 800; font-size: 1.05rem; color: var(--text); text-decoration: none; }
-  .brand__mark { width: 30px; height: 30px; flex: none; }
-  .brand__bg { fill: var(--accent); }
-  .brand__txt { fill: var(--accent-ink); font: 800 13px var(--font-display); }
-  .nav__links { display: flex; gap: 4px; margin: 0 0 0 auto; padding: 0; list-style: none; }
-  .nav__links a { display: block; padding: 8px 10px; border-radius: 8px; color: var(--muted); font-size: 0.92rem; font-weight: 500; text-decoration: none; }
-  .nav__links a:hover { color: var(--text); background: var(--surface-2); }
-  .nav__actions { display: flex; align-items: center; gap: 8px; }
-  .icon-btn {
-    display: inline-grid; place-items: center; width: 40px; height: 40px;
-    border: 1px solid var(--border); border-radius: 10px; background: var(--surface); color: var(--text); cursor: pointer;
-  }
-  .icon-btn:hover { background: var(--surface-2); }
-  .icon-btn svg { width: 18px; height: 18px; }
-  .icon-moon { display: var(--show-moon); }
-  .icon-sun { display: var(--show-sun); }
-  @media (max-width: 860px) {
-    .nav__links { display: none; }
-    .nav__actions { margin-left: auto; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    color: var(--accent); font: 600 var(--fs-xs)/1.2 var(--font-body);
+    letter-spacing: 0.14em; text-transform: uppercase;
   }
 
   /* Buttons */
   .btn {
-    display: inline-flex; align-items: center; gap: 8px;
-    padding: 11px 18px; border-radius: 10px; border: 1px solid var(--border);
-    background: var(--surface); color: var(--text);
-    font: 600 0.95rem/1.2 var(--font-body); text-decoration: none; white-space: nowrap;
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    min-height: 44px; padding: 10px 18px; border-radius: 11px;
+    border: 1px solid var(--border-strong); background: var(--surface); color: var(--text);
+    font: 600 0.9375rem/1.2 var(--font-body); text-decoration: none; white-space: nowrap; cursor: pointer;
+    box-shadow: var(--shadow-sm);
+    transition: background-color 0.18s var(--ease), border-color 0.18s var(--ease), color 0.18s var(--ease), transform 0.12s var(--ease), box-shadow 0.18s var(--ease);
   }
-  .btn:hover { background: var(--surface-2); color: var(--text); }
+  .btn:hover { background: var(--surface-2); border-color: var(--muted); color: var(--text); }
+  .btn:active { transform: translateY(1px); box-shadow: none; }
   .btn svg { width: 17px; height: 17px; flex: none; }
-  .btn--primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
-  .btn--primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: var(--accent-ink); }
-  .btn--sm { padding: 8px 12px; font-size: 0.88rem; }
+  .btn--primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); box-shadow: 0 1px 2px rgba(11, 18, 32, 0.1), 0 6px 16px -6px var(--accent-line); }
+  .btn--primary:hover { background: var(--accent-strong); border-color: var(--accent-strong); color: var(--accent-ink); }
+  .btn--lg { min-height: 48px; padding: 12px 20px; font-size: 1rem; }
+  .btn--sm { min-height: 38px; padding: 8px 13px; font-size: var(--fs-sm); border-radius: 10px; }
+  .link-arrow { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; font-weight: 600; text-decoration: none; }
+  .link-arrow:hover { text-decoration: underline; }
+  .link-arrow svg { width: 16px; height: 16px; flex: none; transition: transform 0.18s var(--ease); }
+  .link-arrow:hover svg { transform: translate(2px, -2px); }
+
+  .icon-btn {
+    display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0;
+    border: 1px solid var(--border); border-radius: 11px; background: var(--surface); color: var(--text); cursor: pointer;
+    transition: background-color 0.18s var(--ease), border-color 0.18s var(--ease), transform 0.12s var(--ease);
+  }
+  .icon-btn:hover { background: var(--surface-2); border-color: var(--border-strong); }
+  .icon-btn:active { transform: translateY(1px); }
+  .icon-btn svg { width: 19px; height: 19px; }
+  .icon-moon { display: var(--show-moon); }
+  .icon-sun { display: var(--show-sun); }
+
+  /* Header */
+  .site-header {
+    position: sticky; top: 0; z-index: 60;
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    backdrop-filter: saturate(170%) blur(12px);
+    -webkit-backdrop-filter: saturate(170%) blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .header__inner { display: flex; align-items: center; gap: 16px; min-height: var(--header-h); }
+  .brand {
+    display: inline-flex; align-items: center; gap: 10px; min-height: 44px; margin-right: auto;
+    font-weight: 700; font-size: 1rem; letter-spacing: -0.01em; color: var(--text); text-decoration: none; white-space: nowrap;
+  }
+  .brand:hover { color: var(--text); }
+  .brand__mark { width: 30px; height: 30px; flex: none; }
+  .brand__bg { fill: var(--accent); }
+  .brand__txt { fill: var(--accent-ink); font: 700 12.5px var(--font-body); }
+  .nav__links { display: flex; gap: 2px; list-style: none; }
+  .nav__links a {
+    position: relative; display: block; padding: 8px 11px; border-radius: 9px;
+    color: var(--muted); font-size: var(--fs-sm); font-weight: 500; text-decoration: none;
+    transition: color 0.18s var(--ease), background-color 0.18s var(--ease);
+  }
+  .nav__links a:hover { color: var(--text); background: var(--surface-2); }
+  .nav__links a[aria-current] { color: var(--text); }
+  .nav__links a::after {
+    content: ""; position: absolute; left: 11px; right: 11px; bottom: 3px; height: 2px; border-radius: 2px;
+    background: var(--accent); transform: scaleX(0); transition: transform 0.25s var(--ease);
+  }
+  .nav__links a[aria-current]::after { transform: scaleX(1); }
+  .header__actions { display: flex; align-items: center; gap: 8px; }
+  .menu-btn { display: none; }
+  @media (max-width: 1099px) { .header__email { display: none; } }
+  @media (max-width: 860px) {
+    .site-nav { display: none; }
+    .menu-btn { display: inline-grid; }
+    .icon-btn { width: 44px; height: 44px; }
+    .btn--sm { min-height: 44px; }
+  }
+  @media (max-width: 479px) {
+    .brand { min-width: 44px; }
+    .brand__name { display: none; }
+  }
+
+  /* Mobile menu (native modal dialog) */
+  .drawer {
+    position: fixed; inset: 0 0 0 auto; margin: 0; padding: 0; border: 0;
+    width: min(88vw, 380px); max-width: none; height: 100%; max-height: none;
+    background: var(--surface); color: var(--text);
+    box-shadow: var(--shadow-lg); overflow-y: auto; overscroll-behavior: contain;
+  }
+  .drawer::backdrop { background: var(--scrim); backdrop-filter: blur(2px); -webkit-backdrop-filter: blur(2px); }
+  .drawer[open] { animation: drawer-in 0.26s var(--ease); }
+  .drawer[open]::backdrop { animation: fade-in 0.2s ease-out; }
+  @keyframes drawer-in { from { transform: translateX(28px); opacity: 0; } to { transform: none; opacity: 1; } }
+  @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+  .drawer__panel {
+    display: flex; flex-direction: column; min-height: 100%;
+    padding: calc(env(safe-area-inset-top, 0px) + 12px) 20px calc(env(safe-area-inset-bottom, 0px) + 24px);
+  }
+  .drawer__head { display: flex; align-items: center; justify-content: space-between; min-height: 52px; }
+  .drawer__title { font-weight: 600; font-size: var(--fs-sm); color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
+  .drawer__links { list-style: none; margin-top: 8px; border-top: 1px solid var(--border); }
+  .drawer__links li { border-bottom: 1px solid var(--border); }
+  .drawer__links a {
+    display: flex; align-items: center; gap: 14px; min-height: 56px; padding: 6px 4px;
+    color: var(--text); text-decoration: none; font-size: 1.125rem; font-weight: 500;
+  }
+  .drawer__links a:hover { color: var(--accent); }
+  .drawer__links a[aria-current] { color: var(--accent); }
+  .drawer__actions { display: grid; gap: 10px; margin-top: 24px; }
+  .drawer__actions .btn { width: 100%; }
+  .drawer__row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .drawer__foot { margin-top: auto; padding-top: 24px; color: var(--muted); font-size: var(--fs-sm); display: flex; align-items: center; gap: 8px; }
 
   /* Hero */
-  .hero { position: relative; padding-block: clamp(48px, 8vw, 96px) clamp(40px, 6vw, 72px); overflow: hidden; }
+  .hero { position: relative; isolation: isolate; overflow: hidden; padding-block: clamp(28px, 4.5vw, 60px) clamp(44px, 5vw, 68px); }
   .hero::before {
-    content: ""; position: absolute; inset: -20% -10% auto auto; width: 70%; height: 120%;
-    background: radial-gradient(closest-side, var(--hero-glow), transparent); pointer-events: none;
+    content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+    background-image:
+      linear-gradient(to right, var(--grid) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
+    background-size: 44px 44px;
+    background-position: -1px -1px;
+    -webkit-mask-image: radial-gradient(ellipse 60% 70% at 78% 0%, #000 20%, transparent 70%);
+    mask-image: radial-gradient(ellipse 60% 70% at 78% 0%, #000 20%, transparent 70%);
   }
-  .hero__grid { position: relative; display: grid; grid-template-columns: 1.35fr 0.65fr; gap: clamp(32px, 6vw, 72px); align-items: center; }
-  .badge {
-    display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px;
-    background: var(--ok-soft); color: var(--ok); font-weight: 600; font-size: 0.88rem;
+  .hero::after {
+    content: ""; position: absolute; z-index: -1; pointer-events: none;
+    width: min(70vw, 820px); aspect-ratio: 1; right: -18%; top: -38%;
+    background: radial-gradient(closest-side, var(--glow), transparent);
   }
-  .badge__dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ok-dot); box-shadow: 0 0 0 3px color-mix(in srgb, var(--ok-dot) 25%, transparent); }
-  .hero h1 { font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 800; margin-top: 18px; }
-  .hero__role { margin-top: 10px; font-family: var(--font-display); font-size: clamp(1.2rem, 2.4vw, 1.5rem); font-weight: 700; color: var(--text); }
-  .hero__stack { margin-top: 8px; color: var(--muted); font-weight: 500; }
-  .hero__loc { margin-top: 6px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
-  .hero__loc svg { width: 16px; height: 16px; flex: none; }
-  .hero__intro { margin-top: 20px; max-width: 58ch; font-size: 1.08rem; }
-  .hero__cta { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; }
-  .hero__photo { justify-self: center; position: relative; width: min(100%, 300px); }
-  .hero__photo img {
-    display: block; width: 100%; height: auto; aspect-ratio: 1; border-radius: 50%; object-fit: cover;
-    border: 6px solid var(--surface); box-shadow: var(--shadow), 0 0 0 1px var(--border);
+  .hero__grid {
+    display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); grid-template-areas: "intro picks" "glance glance";
+    gap: clamp(32px, 4vw, 48px) clamp(32px, 5vw, 72px); align-items: center;
+  }
+  .hero__intro { grid-area: intro; }
+  .picks { grid-area: picks; }
+  .glance { grid-area: glance; }
+  .hero__id { display: flex; align-items: center; gap: 16px; }
+  .hero__photo {
+    display: block; width: 120px; height: 120px; flex: none; border-radius: 50%; object-fit: cover;
+    border: 3px solid var(--surface); box-shadow: 0 0 0 1px var(--border), var(--shadow);
     background: var(--surface-2);
   }
+  .hero__id-text { display: grid; gap: 8px; justify-items: start; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px; padding: 5px 12px 5px 10px; border-radius: 999px;
+    background: var(--ok-soft); color: var(--ok); font-weight: 600; font-size: var(--fs-sm); line-height: 1.3;
+  }
+  .badge__dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ok-dot); box-shadow: 0 0 0 3px color-mix(in srgb, var(--ok-dot) 25%, transparent); }
+  .hero__loc { display: flex; align-items: flex-start; gap: 6px; color: var(--muted); font-size: var(--fs-sm); line-height: 1.5; }
+  .hero__loc svg { width: 15px; height: 15px; flex: none; margin-top: 3px; }
+  .hero h1 {
+    margin-top: clamp(16px, 2.2vw, 24px);
+    font: 400 var(--fs-3xl)/0.95 var(--font-display); letter-spacing: -0.02em; color: var(--text);
+  }
+  .hero__role { margin-top: 12px; font-size: var(--fs-xl); font-weight: 600; letter-spacing: -0.02em; line-height: 1.25; color: var(--text); }
+  .hero__pitch { margin-top: 14px; max-width: 62ch; font-size: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem); line-height: 1.6; color: var(--text-2); }
+  .spec { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; list-style: none; }
+  .spec li {
+    display: inline-flex; align-items: center; gap: 8px; padding: 5px 12px; border-radius: 999px;
+    background: var(--surface); border: 1px solid var(--border); font-size: 0.8125rem; font-weight: 500; color: var(--text);
+  }
+  .spec li::before { content: ""; width: 6px; height: 6px; border-radius: 2px; background: var(--accent); transform: rotate(45deg); }
+  .hero__stack { margin-top: 14px; color: var(--muted); font-size: var(--fs-sm); }
+  .hero__stack strong { color: var(--text); font-weight: 600; }
+  .hero__cta { margin-top: 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 
-  .stats { margin-top: clamp(40px, 6vw, 64px); display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
-  .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 16px 18px; }
-  .stat__num { font-family: var(--font-display); font-weight: 800; font-size: 1.6rem; line-height: 1.1; }
-  .stat__label { color: var(--muted); font-size: 0.9rem; margin-top: 4px; }
+  .picks {
+    position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
+    padding: 20px 10px 10px; box-shadow: var(--shadow-lg);
+  }
+  .picks__head { padding: 0 12px 10px; }
+  .picks__list { list-style: none; display: grid; gap: 2px; }
+  .pick {
+    display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 14px;
+    min-height: 72px; padding: 12px; border-radius: 12px; color: var(--text); text-decoration: none;
+    transition: background-color 0.18s var(--ease), transform 0.18s var(--ease);
+  }
+  .pick:hover { background: var(--surface-2); color: var(--text); transform: translateX(2px); }
+  .pick__num { font: 400 1.9rem/1 var(--font-display); color: var(--accent); width: 2.2ch; }
+  .pick__title { display: block; font-weight: 600; line-height: 1.3; }
+  .pick__outcome { display: block; margin-top: 3px; color: var(--muted); font-size: 0.8125rem; line-height: 1.45; }
+  .pick__arrow { width: 18px; height: 18px; color: var(--muted); transition: transform 0.18s var(--ease), color 0.18s var(--ease); }
+  .pick:hover .pick__arrow { transform: translateY(2px); color: var(--accent); }
+  .picks__all { display: flex; justify-content: flex-end; padding: 4px 12px 2px; border-top: 1px solid var(--border); margin-top: 6px; }
+  .picks__all .link-arrow { font-size: var(--fs-sm); }
 
-  @media (max-width: 860px) {
-    .hero__grid { grid-template-columns: 1fr; }
-    .hero__photo { order: -1; justify-self: start; width: 148px; }
-    .hero__photo img { border-width: 4px; }
-    .stats { grid-template-columns: repeat(2, 1fr); }
+  .glance {
+    list-style: none;
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow);
+  }
+  .glance li { padding: 20px 24px; border-left: 1px solid var(--border); }
+  .glance li:first-child { border-left: 0; }
+  .glance__num { display: block; font: 400 clamp(2rem, 1.6rem + 1.4vw, 2.75rem)/1 var(--font-display); letter-spacing: -0.01em; color: var(--text); }
+  .glance__label { display: block; margin-top: 8px; color: var(--muted); font-size: var(--fs-sm); line-height: 1.4; }
+
+  @media (max-width: 1100px) {
+    .hero__grid { grid-template-columns: 1fr; grid-template-areas: "intro" "glance" "picks"; }
+  }
+  @media (min-width: 761px) and (max-width: 1100px) {
+    .picks__list { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+    .pick { grid-template-columns: auto minmax(0, 1fr); align-items: start; }
+    .pick__arrow { display: none; }
+  }
+  @media (max-width: 760px) {
+    .glance { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .glance li { padding: 14px 16px; }
+    .glance li:nth-child(3) { border-left: 0; }
+    .glance li:nth-child(n+3) { border-top: 1px solid var(--border); }
+  }
+  @media (max-width: 860px) { .hero__photo { width: 100px; height: 100px; } }
+  @media (max-width: 560px) {
+    /* Phones: the pitch already names the specialisations, so the chips give way to the proof strip. */
+    .hero { padding-top: 16px; }
+    .hero__grid { row-gap: 24px; }
+    .hero h1 { margin-top: 12px; }
+    .hero__pitch { font-size: 1rem; }
+    .spec { display: none; }
+    .hero__cta { margin-top: 20px; }
+    .hero__photo { width: 88px; height: 88px; }
+    .hero__cta .btn--primary { flex: 1 1 100%; }
+    .hero__cta .btn:not(.btn--primary) { flex: 1 1 0; }
+    .pick { gap: 12px; padding: 12px 10px; }
   }
 
   /* Sections */
-  section { scroll-margin-top: 76px; }
-  .section { padding-block: clamp(44px, 6vw, 76px); border-top: 1px solid var(--border); }
-  .kicker { color: var(--accent); font-weight: 700; font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; }
-  .section h2 { font-size: clamp(1.7rem, 3.2vw, 2.25rem); font-weight: 800; margin-top: 6px; }
-  .section__lede { margin-top: 12px; color: var(--muted); max-width: 70ch; }
+  .section { padding-block: var(--section-pad); }
+  .section--alt { background: var(--bg-alt); border-block: 1px solid var(--border); }
+  .section__head { max-width: 760px; }
+  .section__head h2 { margin-top: 14px; font: 400 var(--fs-2xl)/1.05 var(--font-display); letter-spacing: -0.015em; color: var(--text); }
+  .section__lede { margin-top: 14px; max-width: 64ch; color: var(--muted); font-size: var(--fs-md); }
 
   /* About */
-  .about { margin-top: 24px; display: grid; grid-template-columns: 1.6fr 1fr; gap: 28px; align-items: start; }
-  .about__text p + p { margin-top: 14px; }
-  .about__text { font-size: 1.05rem; }
-  .facts { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 6px 20px; margin: 0; }
-  .facts div { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--border); }
+  .about { margin-top: clamp(28px, 4vw, 44px); display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 64px); align-items: start; }
+  .about__text { display: grid; gap: 16px; font-size: var(--fs-md); color: var(--text-2); max-width: 66ch; }
+  .about__text p:first-child { font-size: var(--fs-lg); color: var(--text); line-height: 1.55; }
+  .facts { margin: 0; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 4px 20px; box-shadow: var(--shadow-sm); }
+  .facts div { display: flex; justify-content: space-between; gap: 16px; padding: 13px 0; border-bottom: 1px solid var(--border); }
   .facts div:last-child { border-bottom: 0; }
-  .facts dt { color: var(--muted); font-size: 0.92rem; }
-  .facts dd { margin: 0; font-weight: 600; text-align: right; font-size: 0.95rem; }
+  .facts dt { color: var(--muted); font-size: var(--fs-sm); }
+  .facts dd { margin: 0; font-weight: 600; text-align: right; font-size: 0.9375rem; }
   @media (max-width: 860px) { .about { grid-template-columns: 1fr; } }
 
   /* Experience */
-  .company { margin-top: 28px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
-  .company h3 { font-size: 1.3rem; }
+  .company { margin-top: clamp(28px, 4vw, 44px); display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
+  .company h3 { font-size: var(--fs-xl); font-weight: 600; letter-spacing: -0.02em; }
   .company p { color: var(--muted); }
-  .timeline { list-style: none; margin: 24px 0 0; padding: 0 0 0 28px; position: relative; }
-  .timeline::before { content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; background: var(--border); }
-  .role { position: relative; padding-bottom: 28px; }
-  .role:last-child { padding-bottom: 0; }
-  .role::before {
-    content: ""; position: absolute; left: -28px; top: 6px; width: 16px; height: 16px; border-radius: 50%;
-    background: var(--surface); border: 3px solid var(--accent);
+  .ladder { list-style: none; margin-top: 24px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); position: relative; }
+  .ladder::before { content: ""; position: absolute; left: 7px; right: 7px; top: 7px; height: 2px; background: linear-gradient(to right, var(--border-strong), var(--accent)); }
+  .ladder li { position: relative; padding: 26px 12px 0 0; }
+  .ladder li::before {
+    content: ""; position: absolute; left: 0; top: 0; width: 16px; height: 16px; border-radius: 50%;
+    background: var(--bg-alt); border: 2px solid var(--border-strong);
   }
-  .role__card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 20px 22px; }
-  .role__head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; align-items: baseline; }
-  .role__head h4 { margin: 0; font-family: var(--font-display); font-size: 1.1rem; }
-  .role__dates { color: var(--muted); font-size: 0.92rem; font-weight: 500; }
-  .role ul { margin: 12px 0 0; padding-left: 20px; list-style: disc; }
-  .role li + li { margin-top: 6px; }
-  .role li::marker { color: var(--accent); }
-  @media (max-width: 620px) {
-    .timeline { padding-left: 22px; }
-    .timeline::before { left: 6px; }
-    .role::before { left: -22px; width: 14px; height: 14px; border-width: 3px; }
-    .role__card { padding: 16px; }
-    .role ul { padding-left: 18px; }
+  .ladder li:nth-child(2)::before { border-color: color-mix(in srgb, var(--accent) 55%, var(--border-strong)); }
+  .ladder li.is-current::before { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+  .ladder__title { display: block; font-weight: 600; line-height: 1.3; }
+  .ladder__date { display: block; margin-top: 2px; color: var(--muted); font-size: var(--fs-sm); }
+
+  .roles { list-style: none; margin-top: clamp(28px, 4vw, 40px); display: grid; gap: 16px; }
+  .role { display: grid; grid-template-columns: 11.5rem minmax(0, 1fr); gap: 24px; align-items: start; }
+  .role__when { padding-top: 22px; }
+  .role__dates { display: block; font-weight: 600; font-size: var(--fs-sm); font-variant-numeric: tabular-nums; color: var(--text); }
+  .role__card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 24px;
+    box-shadow: var(--shadow-sm); transition: border-color 0.2s var(--ease), box-shadow 0.2s var(--ease);
+  }
+  .role__card:hover { border-color: var(--border-strong); box-shadow: var(--shadow); }
+  .role__card h4 { font-size: 1.125rem; font-weight: 600; letter-spacing: -0.01em; }
+  .role__hl { list-style: none; margin-top: 12px; display: grid; gap: 10px; }
+  .role__hl li { position: relative; padding-left: 20px; color: var(--text-2); }
+  .role__hl li::before { content: ""; position: absolute; left: 2px; top: 0.62em; width: 7px; height: 7px; border-radius: 2px; background: var(--accent); transform: rotate(45deg); }
+  .xref { font-weight: 600; font-size: var(--fs-sm); white-space: nowrap; text-decoration: none; }
+  .xref:hover { text-decoration: underline; }
+  .role__also { margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--border); color: var(--muted); font-size: var(--fs-sm); }
+  .role__also strong { color: var(--text); font-weight: 600; }
+  @media (max-width: 760px) {
+    .ladder { display: none; }
+    .role { grid-template-columns: 1fr; gap: 8px; }
+    .role__when { padding-top: 0; }
+    .role__card { padding: 18px 16px; }
   }
 
-  /* Work */
-  .work-grid { margin-top: 32px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
-  .card {
-    background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
-    padding: clamp(20px, 3vw, 28px); box-shadow: var(--shadow); min-width: 0;
+  /* Work: case studies */
+  .cases { margin-top: clamp(28px, 4vw, 48px); display: grid; gap: 20px; }
+  .case {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
+    padding: clamp(20px, 3vw, 32px); box-shadow: var(--shadow); min-width: 0;
+    transition: border-color 0.2s var(--ease), box-shadow 0.25s var(--ease), transform 0.25s var(--ease);
   }
-  .card--wide { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 400px); gap: clamp(20px, 3.5vw, 40px); align-items: start; }
-  .card--wide .figure { position: sticky; top: 88px; }
-  .card__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; }
-  .card__num { font-family: var(--font-display); font-weight: 800; color: var(--accent); font-size: 0.95rem; }
-  .card__kicker { color: var(--muted); font-size: 0.88rem; font-weight: 500; }
-  .role-chip { display: inline-block; padding: 3px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent-soft-ink); font-size: 0.8rem; font-weight: 600; }
-  .card h3 { margin-top: 10px; font-size: 1.3rem; }
-  .card--wide h3 { font-size: 1.5rem; }
-  .card h4 { margin: 18px 0 6px; font: 700 0.78rem/1.3 var(--font-body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
-  .card ul { margin: 0; padding-left: 20px; }
-  .card li + li { margin-top: 6px; }
-  .card li::marker { color: var(--accent); }
-  .card p, .card li { font-size: 0.97rem; }
-  .card .note { margin-top: 14px; padding: 12px 14px; border-radius: 10px; background: var(--surface-2); border-left: 3px solid var(--accent); font-size: 0.93rem; }
-  .card .note strong { color: var(--text); }
-  .card .tags { padding-left: 0; margin: 18px 0 0; }
-  .card .pipeline { padding-left: 0; margin: 4px 0 0; }
-  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 18px 0 0; padding: 0; list-style: none; }
-  .tags li { margin: 0; padding: 4px 10px; border-radius: 8px; background: var(--surface-2); border: 1px solid var(--border); font-size: 0.82rem; font-weight: 500; color: var(--text); }
-  .tags li + li { margin-top: 0; }
+  .case:hover { border-color: var(--border-strong); box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+  .case:has(details[open]):hover { transform: none; }
+  .case__top { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+  .case__num { font: 400 1.75rem/1 var(--font-display); color: var(--accent); margin-right: 2px; }
+  .chip { display: inline-block; padding: 3px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent-soft-ink); font-size: var(--fs-xs); font-weight: 600; line-height: 1.5; }
+  .case__kicker { color: var(--muted); font-size: var(--fs-sm); }
+  .case__grid { margin-top: 14px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 300px); gap: clamp(20px, 4vw, 48px); align-items: start; }
+  .case h3 { font-size: clamp(1.35rem, 1.2rem + 0.6vw, 1.65rem); font-weight: 600; letter-spacing: -0.02em; line-height: 1.25; }
+  .case__outcome { margin-top: 10px; font-size: var(--fs-md); color: var(--text); max-width: 62ch; }
+  .case__points { list-style: none; margin-top: 14px; display: grid; gap: 8px; max-width: 70ch; }
+  .case__points li { position: relative; padding-left: 20px; color: var(--text-2); font-size: 0.96875rem; }
+  .case__points li::before { content: ""; position: absolute; left: 2px; top: 0.62em; width: 7px; height: 7px; border-radius: 2px; background: var(--accent); transform: rotate(45deg); }
+  .case:has(.case__more[open]) .case__points { display: none; }
+  .case__side { display: grid; gap: 16px; }
+  .evidence { margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: 1px solid var(--border); border-radius: 12px; background: var(--surface-2); }
+  .evidence div { display: flex; flex-direction: column-reverse; justify-content: flex-end; padding: 12px 10px; border-left: 1px solid var(--border); min-width: 0; }
+  .evidence div:first-child { border-left: 0; }
+  .evidence dd { margin: 0; font: 400 1.75rem/1 var(--font-display); color: var(--text); }
+  .evidence dt { margin-top: 6px; color: var(--muted); font-size: 0.75rem; line-height: 1.35; }
+  .nowrap { white-space: nowrap; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; }
+  .tags li { padding: 3px 9px; border-radius: 7px; background: var(--surface); border: 1px solid var(--border); font-size: 0.78125rem; font-weight: 500; color: var(--text-2); }
 
-  .pipeline { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 4px 0 0; padding: 0; list-style: none; }
-  .pipeline li { padding: 4px 9px; border-radius: 8px; border: 1px solid var(--svg-stroke); background: var(--svg-box); font-size: 0.8rem; font-weight: 600; white-space: nowrap; }
-  .pipeline li + li { margin-top: 0; }
+  .case__more { margin-top: 18px; border-top: 1px solid var(--border); }
+  .case__more > summary {
+    display: inline-flex; align-items: center; gap: 10px; min-height: 44px; margin-top: 12px; padding: 8px 14px 8px 12px;
+    border-radius: 10px; border: 1px solid var(--border-strong); background: var(--surface);
+    color: var(--text); font-weight: 600; font-size: var(--fs-sm);
+    transition: background-color 0.18s var(--ease), border-color 0.18s var(--ease);
+  }
+  .case__more > summary:hover { background: var(--surface-2); border-color: var(--muted); }
+  .case__more > summary svg { width: 16px; height: 16px; color: var(--accent); transition: transform 0.22s var(--ease); }
+  .case__more[open] > summary svg { transform: rotate(180deg); }
+  .when-open { display: none; }
+  .case__more[open] .when-open { display: inline; }
+  .case__more[open] .when-closed { display: none; }
+  .case__detail { margin-top: 20px; display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(20px, 4vw, 48px); }
+  .case__detail--fig { grid-template-columns: minmax(0, 1fr) minmax(0, 380px); align-items: start; }
+  .case__detail:not(.case__detail--fig) > div { max-width: 78ch; }
+  .case__more[open] .case__detail { animation: reveal 0.3s var(--ease); }
+  @keyframes reveal { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+  .case__detail h4 { margin: 20px 0 6px; font: 600 0.75rem/1.3 var(--font-body); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+  .case__detail h4:first-child { margin-top: 0; }
+  .case__detail p, .case__detail li { font-size: 0.96875rem; color: var(--text-2); }
+  .case__detail ul { padding-left: 20px; }
+  .case__detail li + li { margin-top: 6px; }
+  .case__detail li::marker { color: var(--accent); }
+  .case__detail strong { color: var(--text); }
+  .case__detail .note { margin-top: 16px; padding: 12px 16px; border-radius: 10px; background: var(--surface-2); border-left: 3px solid var(--accent); font-size: 0.9375rem; }
+  .case__detail .figure { position: sticky; top: calc(var(--header-h) + 20px); }
+
+  .pipeline { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 4px 0 0; padding: 0 !important; list-style: none; }
+  .pipeline li { padding: 4px 9px; border-radius: 8px; border: 1px solid var(--svg-stroke); background: var(--svg-box); font-size: 0.8rem !important; font-weight: 600; white-space: nowrap; color: var(--text) !important; }
+  .pipeline li + li { margin-top: 0 !important; }
   .pipeline li.hl { border-color: var(--svg-accent-stroke); background: var(--svg-accent-fill); }
-  .pipeline li.arrow { border: 0; background: none; padding: 0 1px; color: var(--svg-arrow); font-weight: 400; }
-  .pipeline-caption { margin-top: 8px; color: var(--muted); font-size: 0.86rem; }
+  .pipeline li.arrow { border: 0; background: none; padding: 0 1px; color: var(--svg-arrow) !important; font-weight: 400; }
+  .pipeline-caption { margin-top: 8px; color: var(--muted) !important; font-size: 0.86rem !important; }
 
-  .figure { margin: 0; background: var(--surface-2); border: 1px solid var(--border); border-radius: 14px; padding: 16px; }
-  .figure figcaption { margin-top: 10px; color: var(--muted); font-size: 0.86rem; text-align: center; }
-  .flow { display: block; width: 100%; height: auto; font-family: var(--font-body); }
+  .figure { margin: 0; background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; }
+  .figure figcaption { margin-top: 10px; color: var(--muted); font-size: 0.84rem; text-align: center; }
+  .flow { display: block; width: 100%; max-width: 320px; height: auto; margin-inline: auto; font-family: var(--font-body); }
   .flow .box { fill: var(--svg-box); stroke: var(--svg-stroke); stroke-width: 1.2; }
   .flow .box--accent { fill: var(--svg-accent-fill); stroke: var(--svg-accent-stroke); }
   .flow .box--muted { fill: var(--surface-2); stroke: var(--svg-stroke); stroke-dasharray: 5 4; }
-  .flow .t { fill: var(--text); font-size: 15px; font-weight: 600; }
-  .flow .s { fill: var(--muted); font-size: 13px; }
-  .flow .lbl { fill: var(--muted); font-size: 11.5px; font-weight: 600; }
+  .flow .t { fill: var(--text); font-size: 15.5px; font-weight: 600; }
+  .flow .s { fill: var(--muted); font-size: 14px; }
+  .flow .lbl { fill: var(--muted); font-size: 13px; font-weight: 600; }
   .flow .ln { stroke: var(--svg-arrow); stroke-width: 1.6; fill: none; }
   .flow .ln--dash { stroke-dasharray: 4 4; }
   .flow .ah { fill: var(--svg-arrow); }
 
-  .compact { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
-  .compact .card { box-shadow: none; }
-  .compact .card h3 { font-size: 1.12rem; }
-  .compact__text { margin-top: 10px; }
-
-  @media (max-width: 960px) {
-    .card--wide { grid-template-columns: 1fr; }
-    .card--wide .figure { position: static; max-width: 440px; width: 100%; justify-self: center; }
+  .more { margin-top: clamp(40px, 5vw, 64px); }
+  .more__head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px; padding-bottom: 14px; border-bottom: 1px solid var(--border); }
+  .more__head h3 { font-size: var(--fs-xl); font-weight: 600; letter-spacing: -0.02em; }
+  .more__head p { color: var(--muted); font-size: var(--fs-sm); }
+  .more__grid { margin-top: 20px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .mini {
+    display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 20px; box-shadow: var(--shadow-sm); min-width: 0;
+    transition: border-color 0.2s var(--ease), box-shadow 0.25s var(--ease), transform 0.25s var(--ease);
   }
-  @media (max-width: 860px) {
-    .work-grid { grid-template-columns: 1fr; }
-    .card { padding: 20px 18px; }
-    .figure { padding: 12px 10px; }
-    .compact { grid-template-columns: 1fr; }
+  .mini:hover { border-color: var(--border-strong); box-shadow: var(--shadow); transform: translateY(-2px); }
+  .mini .case__top { gap: 6px 10px; }
+  .mini .case__num { font-size: 1.5rem; }
+  .mini h4 { margin-top: 12px; font-size: 1.0625rem; font-weight: 600; letter-spacing: -0.01em; line-height: 1.35; }
+  .mini p { margin-top: 8px; color: var(--text-2); font-size: 0.9375rem; flex: 1; }
+  .mini .tags { margin-top: 14px; }
+
+  /* Wide screens: the two shorter case studies sit side by side; 01–04 stay full width. */
+  @media (min-width: 1280px) {
+    .cases { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .case:not(.case--half) { grid-column: 1 / -1; }
+    .case--half { display: flex; flex-direction: column; }
+    .case--half .case__grid { flex: 1 1 auto; align-content: start; grid-template-columns: minmax(0, 1fr); gap: 18px; }
+    .case--half:has(.case__more[open]) { grid-column: 1 / -1; }
+    .case--half:has(.case__more[open]) .case__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 300px); gap: clamp(20px, 4vw, 48px); }
+  }
+  @media (max-width: 960px) {
+    .case__grid { grid-template-columns: 1fr; }
+    .case__detail--fig { grid-template-columns: 1fr; }
+    .case__detail .figure { position: static; max-width: 440px; width: 100%; justify-self: center; }
+    .more__grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 560px) {
+    .case { padding: 18px 16px; }
+    .evidence dd { font-size: 1.5rem; }
+    .evidence div { padding: 10px 8px; }
+    .case .tags, .mini .tags { display: none; }
+    /* Diagrams run edge to edge on phones so their text stays at 14px or larger. */
+    .case__detail .figure {
+      justify-self: stretch; width: auto; max-width: none;
+      margin-inline: calc(-1 * (var(--wrap-pad) + 17px)); padding: 14px 10px;
+      border-radius: 0; border-inline: 0;
+    }
+    .pipeline { flex-direction: column; flex-wrap: nowrap; align-items: flex-start; gap: 2px; }
+    .pipeline li.arrow { transform: rotate(90deg); margin-left: 14px; line-height: 1.2; }
   }
 
   /* Skills */
-  .legend { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px 18px; color: var(--muted); font-size: 0.9rem; }
-  .legend span { display: inline-flex; align-items: center; gap: 8px; }
-  .skills { margin-top: 24px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-  .skill-group { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 18px 20px; }
-  .skill-group h3 { font-size: 1.05rem; }
-  .skill-group ul { list-style: none; margin: 12px 0 0; padding: 0; }
-  .skill-group li { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; padding: 8px 0; border-top: 1px solid var(--border); font-size: 0.94rem; }
-  .skill-group li:first-child { border-top: 0; padding-top: 0; }
-  .skill-group small { display: block; color: var(--muted); font-size: 0.82rem; }
-  .lvl { flex: none; padding: 2px 9px; border-radius: 999px; font-size: 0.76rem; font-weight: 700; }
+  .legend { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px 20px; color: var(--muted); font-size: var(--fs-sm); list-style: none; }
+  .legend li { display: inline-flex; align-items: center; gap: 8px; }
+  .skills { margin-top: 28px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .skill-group { min-width: 0; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-sm); }
+  .skill-group h3 { display: flex; align-items: center; min-height: 52px; padding: 14px 18px 4px; font-size: 1.0625rem; font-weight: 600; letter-spacing: -0.01em; }
+  .skill-group:has(.skill-rows[hidden]) h3 { padding-bottom: 14px; }
+  .skill-toggle {
+    display: flex; align-items: center; gap: 12px; width: 100%; min-height: 44px; margin: -6px 0; padding: 0;
+    border: 0; background: none; color: inherit; font: inherit; letter-spacing: inherit; text-align: left; cursor: pointer;
+  }
+  .skill-group__peek { flex: 1; min-width: 0; color: var(--muted); font-size: var(--fs-xs); font-weight: 400; letter-spacing: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .skill-toggle[aria-expanded="true"] .skill-group__peek { visibility: hidden; }
+  .skill-toggle svg { width: 16px; height: 16px; flex: none; margin-left: auto; color: var(--muted); transition: transform 0.22s var(--ease); }
+  .skill-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+  .skill-rows { padding: 6px 18px 16px; display: grid; gap: 12px; }
+  .skill-rows[hidden] { display: none; }
+  .skill-row { display: grid; grid-template-columns: 4.6rem minmax(0, 1fr); gap: 10px; align-items: start; }
+  .skill-row ul { list-style: none; display: grid; gap: 4px; }
+  .skill-row li { font-size: 0.9375rem; line-height: 1.45; }
+  .skill-row small { color: var(--muted); font-size: 0.8125rem; }
+  .lvl { display: inline-block; justify-self: start; padding: 2px 8px; border-radius: 999px; font-size: 0.71875rem; font-weight: 700; letter-spacing: 0.01em; line-height: 1.5; }
   .lvl--strong { background: var(--level-strong-bg); color: var(--level-strong-ink); }
   .lvl--working { background: var(--level-working-bg); color: var(--level-working-ink); }
   .lvl--light { background: var(--level-light-bg); color: var(--level-light-ink); }
   @media (max-width: 960px) { .skills { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (max-width: 620px) { .skills { grid-template-columns: 1fr; } }
+  @media (max-width: 620px) { .skills { grid-template-columns: minmax(0, 1fr); gap: 10px; } }
 
   /* Education */
-  .edu { margin-top: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 22px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; align-items: center; }
-  .edu h3 { font-size: 1.2rem; }
-  .edu p { color: var(--muted); margin-top: 4px; }
+  .section--tight { padding-block: clamp(44px, 5vw, 72px); }
+  .edu-layout { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 20px 40px; align-items: end; }
+  .edu {
+    margin-top: 0; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 22px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; align-items: center; box-shadow: var(--shadow-sm);
+  }
+  .edu h3 { font-size: 1.125rem; font-weight: 600; letter-spacing: -0.01em; }
+  .edu p { color: var(--muted); margin-top: 2px; }
   .edu__meta { display: flex; flex-wrap: wrap; gap: 8px; }
+  @media (max-width: 860px) { .edu-layout { grid-template-columns: 1fr; } }
 
   /* Contact */
-  .contact { margin-top: 24px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-  .contact a { display: block; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 18px 20px; text-decoration: none; color: var(--text); }
-  .contact a:hover { border-color: var(--accent); color: var(--text); }
-  .contact__label { display: block; color: var(--muted); font-size: 0.85rem; font-weight: 600; }
-  .contact__value { display: block; margin-top: 4px; font-weight: 600; color: var(--accent); overflow-wrap: anywhere; }
-  .contact-cta { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; color: var(--muted); }
-  @media (max-width: 860px) { .contact { grid-template-columns: 1fr; } }
+  .contact-card {
+    position: relative; isolation: isolate; overflow: hidden;
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr); gap: clamp(28px, 5vw, 64px); align-items: center;
+    padding: clamp(24px, 5vw, 56px); border-radius: 24px; border: 1px solid var(--border);
+    background: var(--surface); box-shadow: var(--shadow-lg);
+  }
+  .contact-card::before {
+    content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+    background:
+      radial-gradient(60% 90% at 0% 0%, var(--glow), transparent 70%),
+      radial-gradient(40% 60% at 100% 100%, var(--glow), transparent 70%);
+  }
+  .contact-card h2 { margin-top: 14px; font: 400 var(--fs-2xl)/1.05 var(--font-display); letter-spacing: -0.015em; }
+  .contact-card__lede { margin-top: 14px; color: var(--text-2); font-size: var(--fs-md); max-width: 52ch; }
+  .contact-card__aside { display: grid; gap: 16px; }
+  .email-box { border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface-2); padding: 16px; }
+  .email-box__label { display: block; color: var(--muted); font-size: var(--fs-xs); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; }
+  .email-box__row { margin-top: 6px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; }
+  .email-box__addr { font-weight: 600; font-size: var(--fs-md); text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; }
+  .email-box__addr:hover { text-decoration: underline; }
+  .copy-btn { min-width: 104px; }
+  .copy-btn .icon-check { display: none; }
+  .copy-btn.is-copied .icon-check { display: inline-block; }
+  .copy-btn.is-copied .icon-copy { display: none; }
+  .copy-status { min-height: 1.4em; margin-top: 4px; color: var(--muted); font-size: var(--fs-xs); }
+  .copy-status:empty { min-height: 0; margin-top: 0; }
+  .contact-card__actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  @media (min-width: 861px) { .contact-card__actions { flex-wrap: nowrap; } }
+  @media (max-width: 1100px) {
+    .contact-card { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 560px) {
+    .contact-card__actions .btn { flex: 1 1 0; }
+    .contact-card__actions .btn--primary { flex: 1 1 100%; }
+  }
 
-  .footer { border-top: 1px solid var(--border); padding-block: 28px; color: var(--muted); font-size: 0.9rem; }
-  .footer__inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
+  .footer { padding-block: 28px calc(28px + env(safe-area-inset-bottom, 0px)); color: var(--muted); font-size: var(--fs-sm); border-top: 1px solid var(--border); }
+  .footer__inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 24px; }
+  .footer__links { display: flex; gap: 4px 20px; list-style: none; }
+  .footer__links a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; text-decoration: none; }
+  .footer__links a:hover { text-decoration: underline; }
+
+  .to-top {
+    position: fixed; z-index: 50;
+    right: max(16px, env(safe-area-inset-right, 0px));
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%;
+    background: var(--surface); color: var(--text); border: 1px solid var(--border-strong); box-shadow: var(--shadow-lg);
+    opacity: 0; visibility: hidden; transform: translateY(8px);
+    transition: opacity 0.2s var(--ease), transform 0.2s var(--ease), visibility 0s linear 0.2s, background-color 0.18s var(--ease);
+  }
+  .to-top.is-visible { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
+  .to-top:hover { background: var(--surface-2); color: var(--text); }
+  .to-top svg { width: 20px; height: 20px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important; animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important; transition-delay: 0s !important;
+    }
+    .case:hover, .mini:hover, .pick:hover, .btn:active, .icon-btn:active { transform: none; }
+  }
 
   @media print {
     :root:not(#print) {
-      --bg: #ffffff; --surface: #ffffff; --surface-2: #f4f6f9; --border: #d5dbe4;
-      --text: #000000; --muted: #333d4d; --accent: #1d4ed8; --accent-soft: #eef2ff; --accent-soft-ink: #1e3a8a;
+      --bg: #ffffff; --bg-alt: #ffffff; --surface: #ffffff; --surface-2: #f4f6f9; --border: #d5dbe4; --border-strong: #b9c2cf;
+      --text: #000000; --text-2: #1f2633; --muted: #333d4d; --accent: #1d4ed8; --accent-soft: #eef2ff; --accent-soft-ink: #1e3a8a;
       --svg-box: #ffffff; --svg-stroke: #9aa6b8; --svg-accent-fill: #eef3ff; --svg-accent-stroke: #1d4ed8; --svg-arrow: #555f70;
       --level-strong-bg: #eef2ff; --level-strong-ink: #1e3a8a; --level-working-bg: #e9f7ef; --level-working-ink: #14532d;
       --level-light-bg: #f1f2f5; --level-light-ink: #333d4d; --ok: #14532d; --ok-soft: #e9f7ef;
-      --ok-dot: #16a34a; --accent-ink: #ffffff; --accent-hover: #1e3fae;
-      --shadow: none; color-scheme: light;
+      --ok-dot: #16a34a; --accent-ink: #ffffff; --accent-strong: #1e3fae;
+      --shadow-sm: none; --shadow: none; --shadow-lg: none; color-scheme: light;
     }
     body { font-size: 11pt; }
-    .nav, .skip, .hero__cta, .contact-cta .btn, #theme-toggle { display: none !important; }
+    .site-header, .skip, .hero__cta, .contact-card__actions, .copy-btn, .copy-status, .to-top, .drawer, .case__more > summary, .skill-toggle svg, .footer__links { display: none !important; }
     .hero { padding-block: 0 16px; }
-    .hero::before { display: none; }
-    .hero__photo { width: 120px; }
+    .hero::before, .hero::after, .contact-card::before { display: none; }
     .section { padding-block: 20px; }
-    .card, .role__card, .skill-group, .edu, .figure { break-inside: avoid; box-shadow: none; }
-    .work-grid, .compact { display: block; }
-    .work-grid > .card, .compact > .card { margin-bottom: 14px; }
-    .contact a::after { content: " (" attr(href) ")"; font-size: 9pt; color: #333d4d; overflow-wrap: anywhere; }
+    .case, .mini, .role__card, .skill-group, .edu, .figure, .picks { break-inside: avoid; box-shadow: none; }
+    .case__detail .figure { position: static; }
+    .skill-rows[hidden] { display: grid !important; }
     a { color: #000; }
   }
 </style>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+<a class="skip" href="#main">Skip to Content</a>
 
-<header class="nav">
-  <div class="wrap nav__inner">
-    <a class="brand" href="#top" aria-label="Ram Gupta, back to top">
-      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><rect class="brand__bg" width="32" height="32" rx="8"/><text class="brand__txt" x="16" y="21" text-anchor="middle">RG</text></svg>
-      Ram Gupta
+<header class="site-header">
+  <div class="wrap header__inner">
+    <a class="brand" href="#top" aria-label="Ram Gupta, Back to Top">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><rect class="brand__bg" width="32" height="32" rx="8"/><text class="brand__txt" x="16" y="20.5" text-anchor="middle">RG</text></svg>
+      <span class="brand__name">Ram Gupta</span>
     </a>
-    <nav aria-label="Sections">
+    <nav class="site-nav" aria-label="Sections">
       <ul class="nav__links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" data-spy>About</a></li>
+        <li><a href="#experience" data-spy>Experience</a></li>
+        <li><a href="#work" data-spy>Work</a></li>
+        <li><a href="#skills" data-spy>Skills</a></li>
+        <li><a href="#education" data-spy>Education</a></li>
+        <li><a href="#contact" data-spy>Contact</a></li>
       </ul>
     </nav>
-    <div class="nav__actions">
-      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+    <div class="header__actions">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Dark Theme" aria-pressed="false">
         <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
         <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
       </button>
-      <a class="btn btn--sm" href="assets/Ram_Gupta_Resume.pdf" download>Resume</a>
+      <a class="btn btn--sm header__resume" href="assets/Ram_Gupta_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      <a class="btn btn--sm btn--primary header__email" href="mailto:guptaram465691@gmail.com">Email Me</a>
+      <button class="icon-btn menu-btn" id="menu-button" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+      </button>
     </div>
   </div>
 </header>
+
+<dialog class="drawer" id="mobile-menu" aria-labelledby="menu-title">
+  <div class="drawer__panel">
+    <div class="drawer__head">
+      <h2 class="drawer__title" id="menu-title">Menu</h2>
+      <button class="icon-btn" id="menu-close" type="button" aria-label="Close Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <nav aria-label="Sections, Menu">
+      <ul class="drawer__links">
+        <li><a href="#about" data-spy>About</a></li>
+        <li><a href="#experience" data-spy>Experience</a></li>
+        <li><a href="#work" data-spy>Work</a></li>
+        <li><a href="#skills" data-spy>Skills</a></li>
+        <li><a href="#education" data-spy>Education</a></li>
+        <li><a href="#contact" data-spy>Contact</a></li>
+      </ul>
+    </nav>
+    <div class="drawer__actions">
+      <a class="btn btn--primary" href="assets/Ram_Gupta_Resume.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+        Download Resume
+      </a>
+      <a class="btn" href="mailto:guptaram465691@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        Email Me
+      </a>
+      <div class="drawer__row">
+        <a class="btn" href="https://linkedin.com/in/ramgupta07" rel="noopener" target="_blank">LinkedIn
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+        <a class="btn" href="https://github.com/RamGupta07" rel="noopener" target="_blank">GitHub
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+      </div>
+    </div>
+    <p class="drawer__foot"><span class="badge__dot" aria-hidden="true"></span>Available Immediately · Indore, India</p>
+  </div>
+</dialog>
 
 <main id="main">
   <section class="hero" id="top" aria-labelledby="hero-name">
     <div class="wrap">
       <div class="hero__grid">
-        <div>
-          <span class="badge"><span class="badge__dot" aria-hidden="true"></span>Available immediately</span>
+        <div class="hero__intro">
+          <div class="hero__id">
+            <img class="hero__photo" src="assets/photo.webp" width="480" height="480" alt="Portrait of Ram Gupta in a navy suit" fetchpriority="high">
+            <div class="hero__id-text">
+              <span class="badge"><span class="badge__dot" aria-hidden="true"></span>Available Immediately</span>
+              <p class="hero__loc">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+                Indore, India · Open to Relocate or Remote
+              </p>
+            </div>
+          </div>
           <h1 id="hero-name">Ram Gupta</h1>
           <p class="hero__role">Full-Stack Software Engineer</p>
-          <p class="hero__stack">PHP/Laravel · Python/FastAPI · Vue/TypeScript · MySQL · AWS</p>
-          <p class="hero__loc">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
-            Indore, India · open to relocate or remote
-          </p>
-          <p class="hero__intro">I build features for a multi-tenant SaaS end to end, from the design doc to production support. Four years on a B2B recruiting platform; on the AI team, building LLM features in Python, since July 2026.</p>
+          <p class="hero__pitch">I spent four years building multi-tenant SaaS features end to end, from the design doc to production support, and joined the AI team in July 2026 to build LLM features in Python.</p>
+          <ul class="spec" aria-label="Specialisations">
+            <li>Multi-Tenant SaaS Backends</li>
+            <li>Data-Heavy UIs</li>
+            <li>LLM-Powered Features (Python)</li>
+          </ul>
+          <p class="hero__stack"><strong>Stack</strong> · PHP/Laravel · Python/FastAPI · Vue/TypeScript · MySQL · AWS</p>
           <div class="hero__cta">
-            <a class="btn btn--primary" href="assets/Ram_Gupta_Resume.pdf" download>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
-              Download resume
+            <a class="btn btn--primary btn--lg" href="assets/Ram_Gupta_Resume.pdf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>
+              View Resume
             </a>
-            <a class="btn" href="https://linkedin.com/in/ramgupta07" rel="noopener" target="_blank">LinkedIn
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
-            </a>
-            <a class="btn" href="https://github.com/RamGupta07" rel="noopener" target="_blank">GitHub
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
-            </a>
-            <a class="btn" href="mailto:guptaram465691@gmail.com">
+            <a class="btn btn--lg" href="mailto:guptaram465691@gmail.com">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-              Email
+              Email Me
+            </a>
+            <a class="btn btn--lg" href="https://linkedin.com/in/ramgupta07" rel="noopener" target="_blank">LinkedIn
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
             </a>
           </div>
         </div>
-        <div class="hero__photo">
-          <img src="assets/photo.webp" width="480" height="480" alt="Portrait of Ram Gupta in a navy suit" fetchpriority="high">
-        </div>
+        <ul class="glance" aria-label="At a Glance">
+          <li><span class="glance__num">4 Years</span><span class="glance__label">Full-Stack Experience</span></li>
+          <li><span class="glance__num">570</span><span class="glance__label">Pull Requests Authored</span></li>
+          <li><span class="glance__num">370+</span><span class="glance__label">Pull Requests Reviewed</span></li>
+          <li><span class="glance__num">247</span><span class="glance__label">Production Bug Tickets Investigated</span></li>
+        </ul>
+
+        <aside class="picks" aria-labelledby="picks-title">
+          <div class="picks__head">
+            <h2 class="eyebrow" id="picks-title">Selected Work</h2>
+          </div>
+          <ol class="picks__list">
+            <li>
+              <a class="pick" href="#w1">
+                <span class="pick__num" aria-hidden="true">01</span>
+                <span><span class="pick__title">AI Resume-Editing Backend</span><span class="pick__outcome">Edit AI-generated resumes by instruction or by hand instead of regenerating them.</span></span>
+                <svg class="pick__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+              </a>
+            </li>
+            <li>
+              <a class="pick" href="#w2">
+                <span class="pick__num" aria-hidden="true">02</span>
+                <span><span class="pick__title">Record Navigation at 100K+&nbsp;Records</span><span class="pick__outcome">Opening a record costs one position query and one 100-row chunk, not the whole queue.</span></span>
+                <svg class="pick__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+              </a>
+            </li>
+            <li>
+              <a class="pick" href="#w3">
+                <span class="pick__num" aria-hidden="true">03</span>
+                <span><span class="pick__title">Record-Link Custom Fields</span><span class="pick__outcome">Fields that point at real records, resolved in one batched call per list page.</span></span>
+                <svg class="pick__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+              </a>
+            </li>
+          </ol>
+          <div class="picks__all">
+            <a class="link-arrow" href="#work">All Work
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </aside>
       </div>
 
-      <div class="stats" role="list">
-        <div class="stat" role="listitem"><div class="stat__num">4 years</div><div class="stat__label">on one B2B SaaS product</div></div>
-        <div class="stat" role="listitem"><div class="stat__num">570</div><div class="stat__label">pull requests authored</div></div>
-        <div class="stat" role="listitem"><div class="stat__num">370+</div><div class="stat__label">pull requests reviewed</div></div>
-        <div class="stat" role="listitem"><div class="stat__num">247</div><div class="stat__label">production bug tickets investigated</div></div>
-      </div>
     </div>
   </section>
 
-  <section class="section" id="about" aria-labelledby="about-title">
+  <section class="section section--alt" id="about" aria-labelledby="about-title">
     <div class="wrap">
-      <p class="kicker">About</p>
-      <h2 id="about-title">Full stack, end to end</h2>
+      <div class="section__head">
+        <p class="eyebrow">About</p>
+        <h2 id="about-title">Full Stack, End to End</h2>
+      </div>
       <div class="about">
         <div class="about__text">
-          <p>I'm a full-stack software engineer with four years at RecruitCRM, a multi-tenant B2B SaaS (ATS + CRM) used by recruitment agencies worldwide. I own features end to end: requirements analysis and design docs, the PHP/Laravel or Python/FastAPI backend, the Vue 3 + TypeScript frontend, then release and production support.</p>
-          <p>Since July 2026 I've been on the AI team, building LLM features in Python and FastAPI. The work I care most about holds up under real data: tenant isolation, queries that survive 100K-record queues, and feature flags that make a rollout reversible.</p>
-          <p>I'm looking for full-stack, backend (Python or PHP) and AI-product engineering roles.</p>
+          <p>I'm a full-stack software engineer. For four years at Recruit CRM, a multi-tenant B2B SaaS (ATS + CRM) used by recruitment agencies worldwide, I owned features end to end: requirements analysis and design docs, the PHP/Laravel or Python/FastAPI backend, the Vue 3 + TypeScript frontend, then release and production support.</p>
+          <p>The work I care most about holds up under real data: tenant isolation, queries that survive queues of 100K+ rows, and feature flags that make a rollout reversible.</p>
         </div>
         <dl class="facts">
           <div><dt>Based in</dt><dd>Indore, India</dd></div>
-          <div><dt>Work mode</dt><dd>Relocate or remote</dd></div>
+          <div><dt>Work Mode</dt><dd>Relocate or Remote</dd></div>
           <div><dt>Availability</dt><dd>Immediately</dd></div>
-          <div><dt>Experience</dt><dd>4 years, full stack</dd></div>
-          <div><dt>AI / Python</dt><dd>Since July 2026</dd></div>
+          <div><dt>Experience</dt><dd>4 Years, Full Stack</dd></div>
+          <div><dt>AI / Python</dt><dd>Jul – Oct 2026</dd></div>
         </dl>
       </div>
     </div>
@@ -519,40 +958,52 @@
 
   <section class="section" id="experience" aria-labelledby="exp-title">
     <div class="wrap">
-      <p class="kicker">Experience</p>
-      <h2 id="exp-title">Four years, three titles, one product</h2>
-      <div class="company">
-        <h3>RecruitCRM</h3>
-        <p>B2B SaaS ATS + CRM for recruitment agencies · Remote · Oct 2022 – Oct 2026</p>
+      <div class="section__head">
+        <p class="eyebrow">Experience</p>
+        <h2 id="exp-title">Four Years, Three&nbsp;Titles, One Product</h2>
       </div>
-      <ol class="timeline">
+      <div class="company">
+        <h3>Recruit CRM</h3>
+        <p>B2B SaaS ATS + CRM for Recruitment Agencies · Remote · Oct 2022 – Oct 2026</p>
+      </div>
+      <ol class="ladder" aria-label="Career Progression">
+        <li><span class="ladder__title">Trainee</span><span class="ladder__date">Oct 2022</span></li>
+        <li><span class="ladder__title">Associate</span><span class="ladder__date">Jul 2023</span></li>
+        <li class="is-current"><span class="ladder__title">Senior Associate</span><span class="ladder__date">Jul 2024 – Oct 2026</span></li>
+      </ol>
+
+      <ol class="roles">
         <li class="role">
+          <div class="role__when"><span class="role__dates">Jul 2024 – Oct 2026</span></div>
           <div class="role__card">
-            <div class="role__head"><h4>Senior Associate Software Engineer</h4><span class="role__dates">Jul 2024 – Oct 2026</span></div>
-            <ul>
-              <li>Joined the AI team in July 2026 and led V2 of an LLM resume-editing agent across 9 repositories, building its Python/FastAPI backend: LLM-as-judge checks, AWS Bedrock fallback, usage caps and billing only after a successful edit.</li>
-              <li>Re-architected record sequencing for queues of 100K+ records: SQL window-function position lookup, 100-row chunked lazy loading in Vue 3, and fixes for MySQL's 65,535-placeholder limit.</li>
-              <li>Led record-link custom fields for Candidates and Jobs (access-controlled batch lookup API, Vue 2/Vue 3 micro-frontend sync) and extended conditional fields to public application forms with a React form engine.</li>
-              <li>Fixed tenant-isolation, IDOR and RBAC gaps; investigated 247 production bug tickets with written root-cause analyses; reviewed 370+ pull requests.</li>
+            <h4>Senior Associate Software Engineer</h4>
+            <ul class="role__hl">
+              <li>Joined the AI team in July 2026 and led the Python/FastAPI backend of V2 of an LLM resume-editing feature across 9 repositories: LLM-as-judge checks, AWS Bedrock fallback, usage caps and billing only after a successful edit. <a class="xref" href="#w1">Case Study 01&nbsp;→</a></li>
+              <li>Re-architected record navigation for queues of 100K+ rows: SQL window-function position lookup, 100-row chunked lazy loading in Vue 3, and fixes for MySQL's 65,535-placeholder limit. <a class="xref" href="#w2">Case Study 02&nbsp;→</a></li>
+              <li>Led record-link custom fields for Candidates and Jobs (access-controlled batch lookup API, Vue&nbsp;2/Vue&nbsp;3 micro-frontend sync) and extended conditional fields to public application forms with a React form engine. <a class="xref" href="#w3">Case Study 03&nbsp;→</a> <a class="xref" href="#w4">Case Study 04&nbsp;→</a></li>
             </ul>
+            <p class="role__also"><strong>Also:</strong> fixed tenant-isolation, IDOR and RBAC gaps (<a class="xref" href="#w5">05</a>); added seven notification types (<a class="xref" href="#w6">06</a>); investigated 247 production bug tickets with written root-cause analyses; reviewed 370+ pull requests.</p>
           </div>
         </li>
         <li class="role">
+          <div class="role__when"><span class="role__dates">Jul 2023 – Jun 2024</span></div>
           <div class="role__card">
-            <div class="role__head"><h4>Associate Software Engineer</h4><span class="role__dates">Jul 2023 – Jun 2024</span></div>
-            <ul>
+            <h4>Associate Software Engineer</h4>
+            <ul class="role__hl">
               <li>Built most of the Vue 2 filter-search and shared saved-search UI for a search revamp, with per-field-type filter components.</li>
               <li>Co-owned webhook enhancements on an existing Kafka pipeline: wrote the analysis, HLD and LLD for ten events and built the candidate-unassigned event across the backend, public API and Zapier.</li>
               <li>Built an opt-in "override existing records" mode for CSV/XLS imports: merge logic in a queued PHP job, with guards so blank or zero cells never overwrite real data.</li>
-              <li>Wrote the LLD and built per-job candidate questions on application forms (drag-reorder, visible and required toggles) behind feature flags.</li>
             </ul>
+            <p class="role__also"><strong>Also:</strong> wrote the LLD and built per-job candidate questions on application forms (drag-reorder, visible and required toggles) behind feature flags.</p>
           </div>
         </li>
         <li class="role">
+          <div class="role__when"><span class="role__dates">Oct 2022 – Jun 2023</span></div>
           <div class="role__card">
-            <div class="role__head"><h4>Trainee Software Engineer</h4><span class="role__dates">Oct 2022 – Jun 2023</span></div>
-            <ul>
-              <li>Shipped candidate-module features in Vue 2 and PHP (Laravel): searchable owner and collaborator pickers, and a redesigned work and education history UI with a bulk-delete API.</li>
+            <h4>Trainee Software Engineer</h4>
+            <ul class="role__hl">
+              <li>Shipped candidate-module features in Vue 2 and PHP (Laravel), including searchable owner and collaborator pickers.</li>
+              <li>Redesigned the work and education history UI, with a bulk-delete API behind it.</li>
               <li>Worked with a teammate on app-wide searchable dropdowns in the main app and the public application forms.</li>
             </ul>
           </div>
@@ -561,330 +1012,491 @@
     </div>
   </section>
 
-  <section class="section" id="work" aria-labelledby="work-title">
+  <section class="section section--alt" id="work" aria-labelledby="work-title">
     <div class="wrap">
-      <p class="kicker">Featured work</p>
-      <h2 id="work-title">Problems I've solved</h2>
-      <p class="section__lede">Work code lives in private company repositories, so each project is described at product level: the problem, what I built, and what came of it.</p>
+      <div class="section__head">
+        <p class="eyebrow">Selected Work</p>
+        <h2 id="work-title">Problems I've Solved</h2>
+        <p class="section__lede">Work code lives in private company repositories, so each project is described at product level.</p>
+      </div>
 
-      <div class="work-grid">
+      <div class="cases">
 
-        <article class="card" aria-labelledby="w1">
-          <div class="card__meta"><span class="card__num">01</span><span class="role-chip">Led</span><span class="card__kicker">AI · Backend · Jul – Sep 2026</span></div>
-          <h3 id="w1">AI resume-editing backend</h3>
-          <h4>Problem</h4>
-          <p>Agencies send candidates to clients on their own branded resume template. The first version generated that PDF in one LLM call, so any fix meant regenerating at full cost and losing the output.</p>
-          <h4>What I built</h4>
-          <ul>
-            <li>Wrote the requirements analysis and HLD, then the Python/FastAPI edit and save APIs that let recruiters change an AI-generated resume by instruction or by hand.</li>
-            <li>Session ids HMAC-signed and bound to the user and candidate, a Redis per-session edit cap, and a small-model LLM-as-judge that screens each instruction before the main edit call.</li>
-            <li>On the edit call, fallback from Cerebras to AWS Bedrock with explicit per-tier timeouts and IAM-role credentials, verified by forcing the primary model to fail.</li>
-          </ul>
-          <h4>Each edit request</h4>
-          <ol class="pipeline" aria-label="Order of checks on each edit request">
-            <li>Flag</li><li class="arrow" aria-hidden="true">→</li>
-            <li>Signed session</li><li class="arrow" aria-hidden="true">→</li>
-            <li>Session cap</li><li class="arrow" aria-hidden="true">→</li>
-            <li>Credit balance</li><li class="arrow" aria-hidden="true">→</li>
-            <li>Injection check</li><li class="arrow" aria-hidden="true">→</li>
-            <li class="hl">LLM judge</li><li class="arrow" aria-hidden="true">→</li>
-            <li class="hl">Edit model + fallback</li><li class="arrow" aria-hidden="true">→</li>
-            <li>Bill only if changed</li>
-          </ol>
-          <p class="pipeline-caption">Cheap checks first, money last: failed and no-op edits are never charged.</p>
-          <h4>Result</h4>
-          <p>34 PRs across 9 repositories and 284 pytest tests, shipped behind a feature flag. I also built the Vue 3 editor UI together with a teammate.</p>
-          <ul class="tags" aria-label="Stack"><li>Python</li><li>FastAPI</li><li>LiteLLM</li><li>AWS Bedrock</li><li>Redis</li><li>MySQL</li><li>AWS SQS</li><li>pytest</li></ul>
-        </article>
-
-        <article class="card" aria-labelledby="w2">
-          <div class="card__meta"><span class="card__num">02</span><span class="role-chip">Designed &amp; built</span><span class="card__kicker">Backend · Frontend · May – Sep 2026</span></div>
-          <h3 id="w2">Record navigation at 100K+ records</h3>
-          <h4>Problem</h4>
-          <p>Recruiters step through a filtered queue of candidates or tasks one record at a time. The first version loaded the whole queue into the browser before showing a record, which was slow and broke on large queues.</p>
-          <h4>What I built</h4>
-          <ul>
-            <li>Wrote the analysis, HLD/LLD and option briefs for Product, then position-lookup and paged-search APIs in PHP/MySQL: a SQL window-function rank that reuses the list's filters and sort, with a deterministic tiebreak so the "X / Y" badge matches the record shown.</li>
-            <li>Chunked, two-way lazy loading of 100-row pages in Vue 3 (IntersectionObserver), with request scoping through AbortController and stale-id guards.</li>
-            <li>After release, used production traces to fix two crash modes on 100K+-row queues: a COUNT plus wide select timing out, and MySQL's 65,535-placeholder limit.</li>
-          </ul>
-          <h4>How a record opens</h4>
-          <ol class="pipeline" aria-label="How a record opens">
-            <li>Restore list filters</li><li class="arrow" aria-hidden="true">→</li>
-            <li class="hl">Position query</li><li class="arrow" aria-hidden="true">→</li>
-            <li class="hl">Fetch its 100-row chunk</li><li class="arrow" aria-hidden="true">→</li>
-            <li>Lazy-load neighbours</li>
-          </ol>
-          <h4>Result</h4>
-          <p>Opening a record costs one small position query and one 100-row chunk instead of the whole queue. 8 merged PRs across 4 repositories, with 20 frontend test files. A further production-scale follow-up was still open at hand-off.</p>
-          <ul class="tags" aria-label="Stack"><li>PHP</li><li>MySQL</li><li>Window functions</li><li>Vue 3</li><li>TypeScript</li><li>Pinia</li><li>Vitest</li></ul>
-        </article>
-
-        <article class="card card--wide" aria-labelledby="w3">
-          <div>
-            <div class="card__meta"><span class="card__num">03</span><span class="role-chip">Led · analysis, HLD, LLD</span><span class="card__kicker">Full stack · Apr – Nov 2025</span></div>
-            <h3 id="w3">Record-link custom fields</h3>
-            <h4>Problem</h4>
-            <p>A normal custom field holds text or a fixed option. Recruiters needed Candidate and Job fields that point at real records (a company, contact, job, candidate, deal, user or team), so the value shows live details, can be filtered and exported, and never goes stale. Another team had built this for CRM records; I owned the extension.</p>
-            <h4>What I built</h4>
-            <ul>
-              <li><strong>No schema change:</strong> link IDs reuse the existing custom-field storage, so nothing had to be migrated.</li>
-              <li><strong>No per-row requests:</strong> each list page resolves every link in one batched call into a client-side cache keyed by ID.</li>
-              <li><strong>A new batch lookup API</strong> that checks the entity type against an allow-list and the user's view permission, then applies tenant and ownership filters and returns results in request order.</li>
-              <li><strong>Two apps, one view:</strong> a legacy Vue 2 app and a modern Vue 3 app, co-mounted as micro-frontends, stay in sync through events. I built the AG Grid cell renderer and the sync.</li>
-              <li>Filters with server-side search in the shared UI kit, CSV export, inline edit, a feature flag, and exclusion from public forms.</li>
-              <li>A contribution to the Java search service: fixed "is not" filters silently dropping records with empty values (NULL semantics), with about 310 lines of parameterised JUnit tests across all 7 field types.</li>
-            </ul>
-            <h4>Result</h4>
-            <p>8 PRs across 6 repositories; six merged within about 8 minutes in one coordinated release.</p>
-            <p class="note"><strong>Trade-offs.</strong> Reusing the storage avoided a migration but gives up referential integrity, and its filter can't use an index; at larger scale I'd move links into a join table. I ported another team's chips and hover cards, with credit, instead of building a second set.</p>
-            <ul class="tags" aria-label="Stack"><li>PHP/Laravel</li><li>MySQL</li><li>Vue 3</li><li>TypeScript</li><li>Pinia</li><li>AG Grid</li><li>Vue 2</li><li>Micro-frontends</li><li>Java (contribution)</li><li>JUnit</li></ul>
+        <article class="case" id="w1" aria-labelledby="w1-title">
+          <div class="case__top"><span class="case__num">01</span><span class="chip">Led</span><span class="case__kicker">AI · Backend · <span class="nowrap">Jul – Sep 2026</span></span></div>
+          <div class="case__grid">
+            <div>
+              <h3 id="w1-title">AI Resume-Editing Backend</h3>
+              <p class="case__outcome">Recruiters can fix an AI-generated resume by instruction or by hand, instead of regenerating it at full cost.</p>
+              <ul class="case__points">
+                <li>Wrote the requirements analysis and HLD, then built the Python/FastAPI edit and save APIs.</li>
+                <li>Signed sessions bound to the user and candidate, a Redis per-session edit cap, and a small-model LLM-as-judge before the main edit call.</li>
+                <li>Cerebras → AWS Bedrock fallback with explicit timeouts; failed and no-op edits are never charged.</li>
+              </ul>
+            </div>
+            <div class="case__side">
+              <dl class="evidence">
+                <div><dt>PRs</dt><dd>34</dd></div>
+                <div><dt>Repositories</dt><dd>9</dd></div>
+                <div><dt>Tests (pytest)</dt><dd>284</dd></div>
+              </dl>
+              <ul class="tags" aria-label="Stack"><li>Python</li><li>FastAPI</li><li>LiteLLM</li><li>AWS Bedrock</li><li>Redis</li><li>MySQL</li><li>AWS SQS</li><li>pytest</li></ul>
+            </div>
           </div>
-          <figure class="figure">
-            <svg class="flow" viewBox="0 0 340 454" role="img" aria-labelledby="f3-title f3-desc">
-              <title id="f3-title">Record-link custom fields: data flow</title>
-              <desc id="f3-desc">An admin defines a lookup field. The record stores link IDs in its existing custom-field slot. Each list page sends one tenant-scoped batched lookup, one query per linked record type. Filters use a new lookup API that checks the type allow-list, view permission, tenant and ownership, and keeps request order. Results go into a client cache keyed by ID, which is synced to the legacy app by event. Chips, filters, export and inline edit use the resolved records.</desc>
-              <defs>
-                <marker id="ah3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah" d="M0,0 L10,5 L0,10 z"/></marker>
-              </defs>
-<rect class="box" x="10" y="8" width="320" height="58" rx="10"/>
-<text class="t" x="170" y="32" text-anchor="middle">Admin defines a lookup field</text>
-<text class="s" x="170" y="52" text-anchor="middle">on a Candidate or Job → another record</text>
-<line class="ln" x1="170" y1="66" x2="170" y2="88" marker-end="url(#ah3)"/>
-<rect class="box" x="10" y="90" width="320" height="58" rx="10"/>
-<text class="t" x="170" y="114" text-anchor="middle">Record stores link IDs</text>
-<text class="s" x="170" y="134" text-anchor="middle">existing custom-field slot, no migration</text>
-<line class="ln" x1="170" y1="148" x2="170" y2="170" marker-end="url(#ah3)"/>
-<rect class="box box--accent" x="10" y="172" width="320" height="92" rx="10"/>
-<text class="t" x="170" y="196" text-anchor="middle">One batched lookup per page</text>
-<text class="s" x="170" y="216" text-anchor="middle">tenant-scoped, one query per linked type</text>
-<text class="s" x="170" y="234" text-anchor="middle">filters use a new lookup API: allow-list</text>
-<text class="s" x="170" y="252" text-anchor="middle">→ view permission → tenant + ownership</text>
-<line class="ln" x1="105" y1="264" x2="105" y2="286" marker-end="url(#ah3)"/>
-<rect class="box" x="10" y="288" width="190" height="58" rx="10"/>
-<text class="t" x="105" y="312" text-anchor="middle">Client cache</text>
-<text class="s" x="105" y="332" text-anchor="middle">keyed by ID · no N+1</text>
-<line class="ln" x1="203" y1="317" x2="229" y2="317" marker-start="url(#ah3)" marker-end="url(#ah3)"/>
-<rect class="box" x="232" y="288" width="98" height="58" rx="10"/>
-<text class="t" x="281" y="312" text-anchor="middle">Legacy app</text>
-<text class="s" x="281" y="332" text-anchor="middle">via event</text>
-<line class="ln" x1="105" y1="346" x2="105" y2="368" marker-end="url(#ah3)"/>
-<rect class="box" x="10" y="370" width="320" height="76" rx="10"/>
-<text class="t" x="170" y="394" text-anchor="middle">Chips, filters, export, edit</text>
-<text class="s" x="170" y="414" text-anchor="middle">UI reads the cache;</text>
-<text class="s" x="170" y="432" text-anchor="middle">export resolves on the server</text>
-            </svg>
-            <figcaption>Generic data flow. One request per page; the new lookup API adds permission and ownership checks.</figcaption>
-          </figure>
+          <details class="case__more">
+            <summary>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              <span class="when-closed">Read the Case Study</span><span class="when-open">Close the Case Study</span><span class="visually-hidden">: AI Resume-Editing Backend</span>
+            </summary>
+            <div class="case__detail">
+              <div>
+                <h4>Problem</h4>
+                <p>Agencies send candidates to clients on their own branded resume template. The first version generated that PDF in one LLM call, so any fix meant regenerating at full cost and losing the output.</p>
+                <h4>What I Built</h4>
+                <ul>
+                  <li>Wrote the requirements analysis and HLD, then the Python/FastAPI edit and save APIs that let recruiters change an AI-generated resume by instruction or by hand.</li>
+                  <li>Session ids HMAC-signed and bound to the user and candidate, a Redis per-session edit cap, and a small-model LLM-as-judge that screens each instruction before the main edit call.</li>
+                  <li>On the edit call, fallback from Cerebras to AWS Bedrock with explicit per-tier timeouts and IAM-role credentials, verified by forcing the primary model to fail.</li>
+                </ul>
+                <h4>Each Edit Request</h4>
+                <ol class="pipeline" aria-label="Order of Checks on Each Edit Request">
+                  <li>Flag</li><li class="arrow" aria-hidden="true">→</li>
+                  <li>Signed Session</li><li class="arrow" aria-hidden="true">→</li>
+                  <li>Session Cap</li><li class="arrow" aria-hidden="true">→</li>
+                  <li>Credit Balance</li><li class="arrow" aria-hidden="true">→</li>
+                  <li>Injection Check</li><li class="arrow" aria-hidden="true">→</li>
+                  <li class="hl">LLM Judge</li><li class="arrow" aria-hidden="true">→</li>
+                  <li class="hl">Edit Model + Fallback</li><li class="arrow" aria-hidden="true">→</li>
+                  <li>Bill Only If Changed</li>
+                </ol>
+                <p class="pipeline-caption">Cheap checks first, money last: failed and no-op edits are never charged.</p>
+                <h4>Result</h4>
+                <p>34 PRs across 9 repositories and 284 pytest tests, shipped behind a feature flag. I also built the Vue 3 editor UI together with a teammate.</p>
+              </div>
+            </div>
+          </details>
         </article>
 
-        <article class="card card--wide" aria-labelledby="w4">
-          <div>
-            <div class="card__meta"><span class="card__num">04</span><span class="role-chip">Sole author of the public-forms part · HLD &amp; LLD</span><span class="card__kicker">Full stack · Dec 2024 – Feb 2025</span></div>
-            <h3 id="w4">Conditional fields on public application forms</h3>
-            <h4>Problem</h4>
-            <p>Public job-apply and talent-pool forms showed every candidate custom field in one flat list. Dependent fields (Country → State → City) existed only for CRM records, and a public form has no logged-in user to scope the data by.</p>
-            <h4>What I built</h4>
-            <ul>
-              <li><strong>Two public read endpoints</strong> that resolve the account from the job or talent-pool link and return the field-dependency tree and option lists, reusing the existing tree builder.</li>
-              <li><strong>Flag-gated, parallel fetch:</strong> the page-details response already carries the account's feature flag, so the server-rendered page fetches tree and options in parallel, and only when the flag is on.</li>
-              <li><strong>Index once, render as before:</strong> the client indexes the tree (root, inner, leaf). A root renders its whole subtree, child fields are skipped in the normal loop, and every other field renders exactly as it did.</li>
-              <li><strong>A ~1,500-line React form engine</strong> (react-hook-form) that cascades each change per parent type (dropdown, multiselect as a union of options, checkbox), respects hidden ancestors, clears stale answers and deletes orphaned uploads once.</li>
-              <li>An admin settings tree with allow / required per form, where switching a parent off cascades to its descendants; plus candidate and job support in the in-app Vue 2 forms.</li>
-            </ul>
-            <h4>Result</h4>
-            <p>Three PRs merged on the same day behind a flag that reverts to the flat form, with the group-testing defects resolved.</p>
-            <p class="note"><strong>Decisions.</strong> My first version put the tree inside the page-details payload; I replaced it with dedicated endpoints so that contract stayed unchanged and the calls could run in parallel. Flag-off safety has three layers: no extra calls, a flag check on every render branch, and a fallback to the flat form if a fetch fails. I kept a static import over lazy loading to protect the page's largest contentful paint.</p>
-            <ul class="tags" aria-label="Stack"><li>Next.js</li><li>React</li><li>react-hook-form</li><li>PHP/Laravel</li><li>Vue 2</li><li>Feature flags</li></ul>
+        <article class="case" id="w2" aria-labelledby="w2-title">
+          <div class="case__top"><span class="case__num">02</span><span class="chip">Built</span><span class="case__kicker">Backend · Frontend · Analysis, HLD, LLD · <span class="nowrap">May – Sep 2026</span></span></div>
+          <div class="case__grid">
+            <div>
+              <h3 id="w2-title">Record Navigation at 100K+&nbsp;Records</h3>
+              <p class="case__outcome">Opening a record costs one small position query and one 100-row chunk instead of loading the whole queue.</p>
+              <ul class="case__points">
+                <li>Position-lookup and paged-search APIs in PHP/MySQL: a SQL window-function rank that reuses the list's filters and sort.</li>
+                <li>Two-way lazy loading of 100-row chunks in Vue 3, with request scoping and stale-id guards.</li>
+                <li>Used production traces to fix two crash modes on 100K+-row queues, including MySQL's 65,535-placeholder limit.</li>
+              </ul>
+            </div>
+            <div class="case__side">
+              <dl class="evidence">
+                <div><dt>PRs</dt><dd>8</dd></div>
+                <div><dt>Repositories</dt><dd>4</dd></div>
+                <div><dt>Rows per Fetch</dt><dd>100</dd></div>
+              </dl>
+              <ul class="tags" aria-label="Stack"><li>PHP</li><li>MySQL</li><li>Window Functions</li><li>Vue 3</li><li>TypeScript</li><li>Pinia</li><li>Vitest</li></ul>
+            </div>
           </div>
-          <figure class="figure">
-            <svg class="flow" viewBox="0 0 340 570" role="img" aria-labelledby="f4-title f4-desc">
-              <title id="f4-title">Conditional fields on public forms: request and render flow</title>
-              <desc id="f4-desc">The admin settings tree sets allow and required per form. The page details carry the feature flag. If the flag is on, two public endpoints resolve the account from the job or talent-pool link and return the tree and options in parallel; if it is off, the original flat form renders unchanged. The client indexes the tree once, the form engine cascades every change, and the applicant submits only the fields that apply.</desc>
-              <defs>
-                <marker id="ah4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah" d="M0,0 L10,5 L0,10 z"/></marker>
-              </defs>
-<rect class="box" x="10" y="8" width="320" height="58" rx="10"/>
-<text class="t" x="170" y="32" text-anchor="middle">Admin settings tree</text>
-<text class="s" x="170" y="52" text-anchor="middle">allow / required per field, per form</text>
-<line class="ln" x1="170" y1="66" x2="170" y2="88" marker-end="url(#ah4)"/>
-<rect class="box" x="10" y="90" width="320" height="58" rx="10"/>
-<text class="t" x="170" y="114" text-anchor="middle">Page details carry the flag</text>
-<text class="s" x="170" y="134" text-anchor="middle">server-rendered public form page</text>
-<path class="ln" d="M170 148 V162 H115 V186" marker-end="url(#ah4)"/>
-<path class="ln ln--dash" d="M170 162 H281 V186" marker-end="url(#ah4)"/>
-<text class="lbl" x="121" y="178">flag on</text>
-<text class="lbl" x="287" y="178">flag off</text>
-<rect class="box box--accent" x="10" y="188" width="210" height="92" rx="10"/>
-<text class="t" x="115" y="212" text-anchor="middle">Two public endpoints</text>
-<text class="s" x="115" y="232" text-anchor="middle">account from the job</text>
-<text class="s" x="115" y="250" text-anchor="middle">or talent-pool link;</text>
-<text class="s" x="115" y="268" text-anchor="middle">tree + options in parallel</text>
-<rect class="box box--muted" x="232" y="188" width="98" height="92" rx="10"/>
-<text class="t" x="281" y="212" text-anchor="middle">Flag off</text>
-<text class="s" x="281" y="232" text-anchor="middle">original</text>
-<text class="s" x="281" y="250" text-anchor="middle">flat form,</text>
-<text class="s" x="281" y="268" text-anchor="middle">unchanged</text>
-<line class="ln" x1="115" y1="280" x2="115" y2="302" marker-end="url(#ah4)"/>
-<rect class="box" x="10" y="304" width="320" height="76" rx="10"/>
-<text class="t" x="170" y="328" text-anchor="middle">Client indexes the tree once</text>
-<text class="s" x="170" y="348" text-anchor="middle">root · inner · leaf;</text>
-<text class="s" x="170" y="366" text-anchor="middle">each root renders its subtree</text>
-<line class="ln" x1="170" y1="380" x2="170" y2="402" marker-end="url(#ah4)"/>
-<rect class="box box--accent" x="10" y="404" width="320" height="76" rx="10"/>
-<text class="t" x="170" y="428" text-anchor="middle">Form engine cascades changes</text>
-<text class="s" x="170" y="448" text-anchor="middle">show, hide, filter children;</text>
-<text class="s" x="170" y="466" text-anchor="middle">clear stale answers and files</text>
-<line class="ln" x1="170" y1="480" x2="170" y2="502" marker-end="url(#ah4)"/>
-<rect class="box" x="10" y="504" width="320" height="58" rx="10"/>
-<text class="t" x="170" y="529" text-anchor="middle">Applicant submits only</text>
-<text class="t" x="170" y="548" text-anchor="middle">the fields that apply</text>
-            </svg>
-            <figcaption>Generic flow. Accounts without the feature get the old form and no extra calls.</figcaption>
-          </figure>
+          <details class="case__more">
+            <summary>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              <span class="when-closed">Read the Case Study</span><span class="when-open">Close the Case Study</span><span class="visually-hidden">: Record Navigation at 100K+ Records</span>
+            </summary>
+            <div class="case__detail">
+              <div>
+                <h4>Problem</h4>
+                <p>Recruiters step through a filtered queue of candidates or tasks one record at a time. The first version loaded the whole queue into the browser before showing a record, which was slow and broke on large queues.</p>
+                <h4>What I Built</h4>
+                <ul>
+                  <li>Wrote the analysis, HLD/LLD and option briefs for Product, then position-lookup and paged-search APIs in PHP/MySQL: a SQL window-function rank that reuses the list's filters and sort, with a deterministic tiebreak so the "X / Y" badge matches the record shown.</li>
+                  <li>Chunked, two-way lazy loading of 100-row pages in Vue 3 (IntersectionObserver), with request scoping through AbortController and stale-id guards.</li>
+                  <li>After release, used production traces to fix two crash modes on 100K+-row queues: a COUNT plus wide select timing out, and MySQL's 65,535-placeholder limit.</li>
+                </ul>
+                <h4>How a Record Opens</h4>
+                <ol class="pipeline" aria-label="How a Record Opens">
+                  <li>Restore List Filters</li><li class="arrow" aria-hidden="true">→</li>
+                  <li class="hl">Position Query</li><li class="arrow" aria-hidden="true">→</li>
+                  <li class="hl">Fetch Its 100-Row Chunk</li><li class="arrow" aria-hidden="true">→</li>
+                  <li>Lazy-Load Neighbours</li>
+                </ol>
+                <h4>Result</h4>
+                <p>8 merged PRs across 4 repositories, with 20 frontend test files. A further production-scale follow-up was still open at hand-off.</p>
+              </div>
+            </div>
+          </details>
         </article>
 
-        <article class="card" aria-labelledby="w5">
-          <div class="card__meta"><span class="card__num">05</span><span class="role-chip">Built</span><span class="card__kicker">Backend · Security · 2025 – 2026</span></div>
-          <h3 id="w5">Multi-tenant security and rich text safe from XSS</h3>
-          <h4>Problem</h4>
-          <p>In a multi-tenant SaaS, one query without a tenant filter, a public page that trusts the browser, or unsanitised HTML from a logged-out form is a data-exposure bug.</p>
-          <h4>What I built</h4>
-          <ul>
-            <li>Account scoping on raw SQL in lookups and duplicate checks, and a fix for an IDOR where an endpoint updated a user record by an id taken from the request body.</li>
-            <li>Removed plaintext passcodes from API responses and added a server-side validation endpoint with a constant-time compare.</li>
-            <li>A server-side field allow-list on a client-shared candidate list, so a column added later stays hidden by default; permission checks through a central authorization service on 7 endpoints, returning real 403s.</li>
-            <li>Rich-text work and education descriptions across the app, public forms and the public API: DOMPurify in the browser, HTMLPurifier on the server, HTML-aware 10,000-character limits, behind a flag.</li>
-          </ul>
-          <h4>Result</h4>
-          <p>Shipped as a series of targeted fixes; I also removed static AWS keys from 7 services in an org-wide change. In the rich-text analysis I asked how many existing records already broke the new limit: 12,449 did, so Product applied it to new input only.</p>
-          <ul class="tags" aria-label="Stack"><li>PHP/Laravel</li><li>MySQL</li><li>Next.js</li><li>gRPC</li><li>DOMPurify</li><li>HTMLPurifier</li><li>AWS IAM</li></ul>
+        <article class="case" id="w3" aria-labelledby="w3-title">
+          <div class="case__top"><span class="case__num">03</span><span class="chip">Led</span><span class="case__kicker">Full Stack · Analysis, HLD, LLD · <span class="nowrap">Apr – Nov 2025</span></span></div>
+          <div class="case__grid">
+            <div>
+              <h3 id="w3-title">Record-Link Custom Fields</h3>
+              <p class="case__outcome">Candidate and Job fields can now point at real records, resolved in one batched call per list page with no migration.</p>
+              <ul class="case__points">
+                <li>Link IDs reuse the existing custom-field storage, so nothing had to be migrated.</li>
+                <li>A new batch lookup API that checks the entity type and view permission, then applies tenant and ownership filters.</li>
+                <li>A legacy Vue 2 app and a modern Vue 3 app stay in sync through events; I built the AG Grid cell renderer and the sync.</li>
+              </ul>
+            </div>
+            <div class="case__side">
+              <dl class="evidence">
+                <div><dt>PRs</dt><dd>8</dd></div>
+                <div><dt>Repositories</dt><dd>6</dd></div>
+                <div><dt>Linked Record Types</dt><dd>7</dd></div>
+              </dl>
+              <ul class="tags" aria-label="Stack"><li>PHP/Laravel</li><li>MySQL</li><li>Vue 3</li><li>TypeScript</li><li>Pinia</li><li>AG Grid</li><li>Vue 2</li><li>Micro-Frontends</li><li>Java (Contribution)</li><li>JUnit</li></ul>
+            </div>
+          </div>
+          <details class="case__more">
+            <summary>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              <span class="when-closed">Read the Case Study</span><span class="when-open">Close the Case Study</span><span class="visually-hidden">: Record-Link Custom Fields</span>
+            </summary>
+            <div class="case__detail case__detail--fig">
+              <div>
+                <h4>Problem</h4>
+                <p>A normal custom field holds text or a fixed option. Recruiters needed Candidate and Job fields that point at real records (a company, contact, job, candidate, deal, user or team), so the value shows live details, can be filtered and exported, and never goes stale. Another team had built this for CRM records; I owned the extension.</p>
+                <h4>What I Built</h4>
+                <ul>
+                  <li><strong>No schema change:</strong> link IDs reuse the existing custom-field storage, so nothing had to be migrated.</li>
+                  <li><strong>No per-row requests:</strong> each list page resolves every link in one batched call into a client-side cache keyed by ID.</li>
+                  <li><strong>A new batch lookup API</strong> that checks the entity type against an allow-list and the user's view permission, then applies tenant and ownership filters and returns results in request order.</li>
+                  <li><strong>Two apps, one view:</strong> a legacy Vue 2 app and a modern Vue 3 app, co-mounted as micro-frontends, stay in sync through events. I built the AG Grid cell renderer and the sync.</li>
+                  <li>Filters with server-side search in the shared UI kit, CSV export, inline edit, a feature flag, and exclusion from public forms.</li>
+                  <li>A contribution to the Java search service: fixed "is not" filters silently dropping records with empty values (NULL semantics), with parameterised JUnit tests across all 7 field types.</li>
+                </ul>
+                <h4>Result</h4>
+                <p>8 PRs across 6 repositories; the core shipped in one coordinated release.</p>
+                <p class="note"><strong>Trade-Offs.</strong> Reusing the storage avoided a migration but gives up referential integrity, and its filter can't use an index; at larger scale I'd move links into a join table. I ported another team's chips and hover cards, with credit, instead of building a second set.</p>
+              </div>
+              <figure class="figure">
+                <svg class="flow" viewBox="0 0 300 474" role="img" aria-labelledby="f3-title f3-desc">
+                  <title id="f3-title">Record-Link Custom Fields: Data Flow</title>
+                  <desc id="f3-desc">An admin defines a lookup field on a Candidate or Job. The record stores link IDs in its existing custom-field slot, so nothing is migrated. Each list page sends one tenant-scoped batched lookup, with one query per linked record type. The results go into a client cache keyed by ID, which is synced to the legacy app by event. Chips, filters, export and inline edit use the resolved records.</desc>
+                  <defs>
+                    <marker id="ah3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah" d="M0,0 L10,5 L0,10 z"/></marker>
+                  </defs>
+                  <rect class="box" x="8" y="8" width="284" height="58" rx="10"/>
+                  <text class="t" x="150" y="32" text-anchor="middle">Admin Defines a Lookup Field</text>
+                  <text class="s" x="150" y="53" text-anchor="middle">Candidate or Job → another record</text>
+                  <line class="ln" x1="150" y1="66" x2="150" y2="88" marker-end="url(#ah3)"/>
+                  <rect class="box" x="8" y="90" width="284" height="76" rx="10"/>
+                  <text class="t" x="150" y="114" text-anchor="middle">Record Stores Link IDs</text>
+                  <text class="s" x="150" y="135" text-anchor="middle">existing custom-field slot,</text>
+                  <text class="s" x="150" y="154" text-anchor="middle">so no migration</text>
+                  <line class="ln" x1="150" y1="166" x2="150" y2="188" marker-end="url(#ah3)"/>
+                  <rect class="box box--accent" x="8" y="190" width="284" height="76" rx="10"/>
+                  <text class="t" x="150" y="214" text-anchor="middle">One Batched Lookup per Page</text>
+                  <text class="s" x="150" y="235" text-anchor="middle">tenant-scoped; one query</text>
+                  <text class="s" x="150" y="254" text-anchor="middle">per linked record type</text>
+                  <line class="ln" x1="150" y1="266" x2="150" y2="288" marker-end="url(#ah3)"/>
+                  <rect class="box" x="8" y="290" width="284" height="76" rx="10"/>
+                  <text class="t" x="150" y="314" text-anchor="middle">Client Cache</text>
+                  <text class="s" x="150" y="335" text-anchor="middle">keyed by ID, so no N+1;</text>
+                  <text class="s" x="150" y="354" text-anchor="middle">synced to the legacy app by event</text>
+                  <line class="ln" x1="150" y1="366" x2="150" y2="388" marker-end="url(#ah3)"/>
+                  <rect class="box" x="8" y="390" width="284" height="76" rx="10"/>
+                  <text class="t" x="150" y="414" text-anchor="middle">Chips, Filters, Export, Edit</text>
+                  <text class="s" x="150" y="435" text-anchor="middle">UI reads the cache;</text>
+                  <text class="s" x="150" y="454" text-anchor="middle">export resolves on the server</text>
+                </svg>
+                <figcaption>Generic data flow: one batched request per list page. Filters use a separate new lookup API that checks the type allow-list, view permission, tenant and ownership.</figcaption>
+              </figure>
+            </div>
+          </details>
         </article>
 
-        <article class="card" aria-labelledby="w6">
-          <div class="card__meta"><span class="card__num">06</span><span class="role-chip">Sole author</span><span class="card__kicker">Backend · Full stack · Aug – Oct 2025</span></div>
-          <h3 id="w6">Event-driven notifications</h3>
-          <h4>Problem</h4>
-          <p>Recruiters had no signal when a client viewed the candidates they had shared, when records were transferred to them, when a candidate applied twice, or when an export finished.</p>
-          <h4>What I built</h4>
-          <ul>
-            <li>Seven in-app and browser-push notification types end to end on the existing pipeline, from PHP producers to Vue 3 notification templates.</li>
-            <li>Per-template grouping keys with a matching compound index, so a bulk action becomes one notification instead of flooding the bell.</li>
-            <li>A public endpoint, checked by origin and a job code, that raises client-activity events from a page with no login; its triggers fire once, after page load.</li>
-          </ul>
-          <h4>Pipeline</h4>
-          <ol class="pipeline" aria-label="Notification pipeline">
-            <li>PHP producers</li><li class="arrow" aria-hidden="true">→</li>
-            <li class="hl">AWS SQS</li><li class="arrow" aria-hidden="true">→</li>
-            <li>Workers</li><li class="arrow" aria-hidden="true">→</li>
-            <li class="hl">MongoDB, per tenant</li><li class="arrow" aria-hidden="true">→</li>
-            <li>Push + in-app</li>
-          </ol>
-          <h4>Result</h4>
-          <p>8 PRs across 8 repositories, seven merged on the same day. In 2026 I also finished AI Sourcing match notifications, fixing a silent drop in the Python SQS producer.</p>
-          <ul class="tags" aria-label="Stack"><li>PHP/Laravel</li><li>AWS SQS</li><li>MongoDB</li><li>Firebase push</li><li>Vue 3</li><li>Next.js</li></ul>
+        <article class="case" id="w4" aria-labelledby="w4-title">
+          <div class="case__top"><span class="case__num">04</span><span class="chip">Sole Author</span><span class="case__kicker">Full Stack · Public-Forms Part · HLD &amp; LLD · <span class="nowrap">Dec 2024 – Feb 2025</span></span></div>
+          <div class="case__grid">
+            <div>
+              <h3 id="w4-title">Conditional Fields on Public Application Forms</h3>
+              <p class="case__outcome">Applicants see only the fields that apply to their earlier answers; accounts without the feature get the original form and no extra calls.</p>
+              <ul class="case__points">
+                <li>Two public read endpoints that resolve the account from the job or talent-pool link, fetched in parallel only when the flag is on.</li>
+                <li>A React form engine that shows, hides and filters dependent fields and clears stale answers and uploads.</li>
+                <li>An admin settings tree with allow / required per form, where switching a parent off cascades to its descendants.</li>
+              </ul>
+            </div>
+            <div class="case__side">
+              <dl class="evidence">
+                <div><dt>PRs</dt><dd>3</dd></div>
+                <div><dt>Public Endpoints</dt><dd>2</dd></div>
+                <div><dt>Layers of <span class="nowrap">Flag-Off</span> Safety</dt><dd>3</dd></div>
+              </dl>
+              <ul class="tags" aria-label="Stack"><li>Next.js</li><li>React</li><li>react-hook-form</li><li>PHP/Laravel</li><li>Vue 2</li><li>Feature Flags</li></ul>
+            </div>
+          </div>
+          <details class="case__more">
+            <summary>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              <span class="when-closed">Read the Case Study</span><span class="when-open">Close the Case Study</span><span class="visually-hidden">: Conditional Fields on Public Application Forms</span>
+            </summary>
+            <div class="case__detail case__detail--fig">
+              <div>
+                <h4>Problem</h4>
+                <p>Public job-apply and talent-pool forms showed every candidate custom field in one flat list. Dependent fields (Country → State → City) existed only for CRM records, and a public form has no logged-in user to scope the data by.</p>
+                <h4>What I Built</h4>
+                <ul>
+                  <li><strong>Two public read endpoints</strong> that resolve the account from the job or talent-pool link and return the field-dependency tree and option lists, reusing the existing tree builder.</li>
+                  <li><strong>Flag-gated, parallel fetch:</strong> the page-details response already carries the account's feature flag, so the server-rendered page fetches tree and options in parallel, and only when the flag is on.</li>
+                  <li><strong>Index once, render as before:</strong> the client indexes the tree (root, inner, leaf). A root renders its whole subtree, child fields are skipped in the normal loop, and every other field renders exactly as it did.</li>
+                  <li><strong>A React form engine</strong> (react-hook-form) that cascades each change per parent type (dropdown, multiselect as a union of options, checkbox), respects hidden ancestors, clears stale answers and deletes orphaned uploads once.</li>
+                  <li>An admin settings tree with allow / required per form, where switching a parent off cascades to its descendants; plus candidate and job support in the in-app Vue 2 forms.</li>
+                </ul>
+                <h4>Result</h4>
+                <p>Three PRs merged on the same day behind a flag that reverts to the flat form, with the group-testing defects resolved.</p>
+                <p class="note"><strong>Decisions.</strong> My first version put the tree inside the page-details payload; I replaced it with dedicated endpoints so that contract stayed unchanged and the calls could run in parallel. Flag-off safety has three layers: no extra calls, a flag check on every render branch, and a fallback to the flat form if a fetch fails. I kept a static import over lazy loading to protect the page's largest contentful paint.</p>
+              </div>
+              <figure class="figure">
+                <svg class="flow" viewBox="0 0 300 610" role="img" aria-labelledby="f4-title f4-desc">
+                  <title id="f4-title">Conditional Fields on Public Forms: Request and Render Flow</title>
+                  <desc id="f4-desc">The admin settings tree sets allow and required per form. The page details carry the feature flag. If the flag is on, two public endpoints resolve the account from the job or talent-pool link and return the tree and options in parallel; if it is off, the original flat form renders unchanged. The client indexes the tree once, the form engine cascades every change, and the applicant submits only the fields that apply.</desc>
+                  <defs>
+                    <marker id="ah4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah" d="M0,0 L10,5 L0,10 z"/></marker>
+                  </defs>
+                  <rect class="box" x="8" y="8" width="284" height="76" rx="10"/>
+                  <text class="t" x="150" y="32" text-anchor="middle">Admin Settings Tree</text>
+                  <text class="s" x="150" y="53" text-anchor="middle">allow / required per field,</text>
+                  <text class="s" x="150" y="72" text-anchor="middle">per form</text>
+                  <line class="ln" x1="150" y1="84" x2="150" y2="106" marker-end="url(#ah4)"/>
+                  <rect class="box" x="8" y="108" width="284" height="58" rx="10"/>
+                  <text class="t" x="150" y="132" text-anchor="middle">Page Details Carry the Flag</text>
+                  <text class="s" x="150" y="153" text-anchor="middle">server-rendered public form page</text>
+                  <path class="ln" d="M150 166 V180 H102 V204" marker-end="url(#ah4)"/>
+                  <path class="ln ln--dash" d="M150 180 H248 V204" marker-end="url(#ah4)"/>
+                  <text class="lbl" x="108" y="197">Flag On</text>
+                  <text class="lbl" x="242" y="197" text-anchor="end">Flag Off</text>
+                  <rect class="box box--accent" x="8" y="206" width="188" height="116" rx="10"/>
+                  <text class="t" x="102" y="230" text-anchor="middle">2 Public Endpoints</text>
+                  <text class="s" x="102" y="251" text-anchor="middle">account from the job</text>
+                  <text class="s" x="102" y="270" text-anchor="middle">or talent-pool link;</text>
+                  <text class="s" x="102" y="289" text-anchor="middle">tree + options</text>
+                  <text class="s" x="102" y="308" text-anchor="middle">in parallel</text>
+                  <rect class="box box--muted" x="204" y="206" width="88" height="116" rx="10"/>
+                  <text class="t" x="248" y="230" text-anchor="middle">Flag Off</text>
+                  <text class="s" x="248" y="251" text-anchor="middle">original</text>
+                  <text class="s" x="248" y="270" text-anchor="middle">flat form,</text>
+                  <text class="s" x="248" y="289" text-anchor="middle">unchanged</text>
+                  <line class="ln" x1="102" y1="322" x2="102" y2="344" marker-end="url(#ah4)"/>
+                  <rect class="box" x="8" y="346" width="284" height="76" rx="10"/>
+                  <text class="t" x="150" y="370" text-anchor="middle">Client Indexes the Tree Once</text>
+                  <text class="s" x="150" y="391" text-anchor="middle">root · inner · leaf;</text>
+                  <text class="s" x="150" y="410" text-anchor="middle">each root renders its subtree</text>
+                  <line class="ln" x1="150" y1="422" x2="150" y2="444" marker-end="url(#ah4)"/>
+                  <rect class="box box--accent" x="8" y="446" width="284" height="76" rx="10"/>
+                  <text class="t" x="150" y="470" text-anchor="middle">Form Engine Cascades Changes</text>
+                  <text class="s" x="150" y="491" text-anchor="middle">show, hide, filter children;</text>
+                  <text class="s" x="150" y="510" text-anchor="middle">clear stale answers and files</text>
+                  <line class="ln" x1="150" y1="522" x2="150" y2="544" marker-end="url(#ah4)"/>
+                  <rect class="box" x="8" y="546" width="284" height="58" rx="10"/>
+                  <text class="t" x="150" y="571" text-anchor="middle">Applicant Submits Only</text>
+                  <text class="t" x="150" y="591" text-anchor="middle">the Fields That Apply</text>
+                </svg>
+                <figcaption>Generic flow. Accounts without the feature get the old form and no extra calls.</figcaption>
+              </figure>
+            </div>
+          </details>
         </article>
 
-        <div class="compact">
-          <article class="card" aria-labelledby="w7a">
-            <div class="card__meta"><span class="card__num">07</span><span class="role-chip">Sole author</span><span class="card__kicker">Nov – Dec 2024</span></div>
-            <h3 id="w7a">Job-board compliance across 8 codebases</h3>
-            <p class="compact__text">Indeed was rejecting job postings that broke its guidelines. I added a job location type and postal code (an in-place column conversion with three regenerated MySQL views and rollback scripts), changed the public REST API contract with OpenAPI docs, and updated Zapier, email placeholders and Indeed-only warnings on the job form. 13 PRs, released in two coordinated waves.</p>
+        <article class="case case--half" id="w5" aria-labelledby="w5-title">
+          <div class="case__top"><span class="case__num">05</span><span class="chip">Built</span><span class="case__kicker">Backend · Security · <span class="nowrap">2025 – 2026</span></span></div>
+          <div class="case__grid">
+            <div>
+              <h3 id="w5-title">Multi-Tenant Security and XSS-Safe Rich Text</h3>
+              <p class="case__outcome">Tenant scoping, permission checks and sanitised rich text across the app, public forms and the public API.</p>
+              <ul class="case__points">
+                <li>Account scoping on raw SQL in lookups and duplicate checks, and an IDOR fix on a user-update endpoint.</li>
+                <li>Permission checks through a central authorisation service on 7 endpoints, returning real 403s.</li>
+                <li>Rich text sanitised with DOMPurify in the browser and HTMLPurifier on the server, behind a flag.</li>
+              </ul>
+            </div>
+            <div class="case__side">
+              <dl class="evidence">
+                <div><dt>Endpoints with Permission Checks</dt><dd>7</dd></div>
+                <div><dt>Services off Static AWS Keys</dt><dd>7</dd></div>
+                <div><dt>Surfaces Made <span class="nowrap">XSS-Safe</span></dt><dd>3</dd></div>
+              </dl>
+              <ul class="tags" aria-label="Stack"><li>PHP/Laravel</li><li>MySQL</li><li>Next.js</li><li>gRPC</li><li>DOMPurify</li><li>HTMLPurifier</li><li>AWS IAM</li></ul>
+            </div>
+          </div>
+          <details class="case__more">
+            <summary>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              <span class="when-closed">Read the Case Study</span><span class="when-open">Close the Case Study</span><span class="visually-hidden">: Multi-Tenant Security and XSS-Safe Rich Text</span>
+            </summary>
+            <div class="case__detail">
+              <div>
+                <h4>Problem</h4>
+                <p>In a multi-tenant SaaS, one query without a tenant filter, a public page that trusts the browser, or unsanitised HTML from a logged-out form is a data-exposure bug.</p>
+                <h4>What I Built</h4>
+                <ul>
+                  <li>Account scoping on raw SQL in lookups and duplicate checks, and a fix for an IDOR where an endpoint updated a user record by an id taken from the request body.</li>
+                  <li>Moved passcode checks to the server: a validation endpoint with a constant-time compare, so passcodes no longer reach the browser.</li>
+                  <li>A server-side field allow-list on a client-shared candidate list, so a column added later stays hidden by default; permission checks through a central authorisation service on 7 endpoints, returning real 403s.</li>
+                  <li>Rich-text work and education descriptions across the app, public forms and the public API: DOMPurify in the browser, HTMLPurifier on the server, HTML-aware 10,000-character limits, behind a flag.</li>
+                </ul>
+                <h4>Result</h4>
+                <p>Shipped as a series of targeted fixes; I also removed static AWS keys from 7 services in an org-wide change. In the rich-text analysis I asked how many existing records already broke the new limit: 12,449 did, so Product applied it to new input only.</p>
+              </div>
+            </div>
+          </details>
+        </article>
+
+        <article class="case case--half" id="w6" aria-labelledby="w6-title">
+          <div class="case__top"><span class="case__num">06</span><span class="chip">Sole Author</span><span class="case__kicker">Backend · Full Stack · <span class="nowrap">Aug – Oct 2025</span></span></div>
+          <div class="case__grid">
+            <div>
+              <h3 id="w6-title">Event-Driven Notifications</h3>
+              <p class="case__outcome">Recruiters now hear when a client views shared candidates, records are transferred to them, a candidate applies twice or an export finishes.</p>
+              <ul class="case__points">
+                <li>Seven in-app and browser-push notification types end to end, from PHP producers to Vue 3 templates.</li>
+                <li>Per-template grouping keys with a matching compound index, so a bulk action becomes one notification.</li>
+                <li>A public endpoint, checked by origin and a job code, that raises client-activity events from a page with no login.</li>
+              </ul>
+            </div>
+            <div class="case__side">
+              <dl class="evidence">
+                <div><dt>PRs</dt><dd>8</dd></div>
+                <div><dt>Repositories</dt><dd>8</dd></div>
+                <div><dt>Notification Types</dt><dd>7</dd></div>
+              </dl>
+              <ul class="tags" aria-label="Stack"><li>PHP/Laravel</li><li>AWS SQS</li><li>MongoDB</li><li>Firebase Push</li><li>Vue 3</li><li>Next.js</li></ul>
+            </div>
+          </div>
+          <details class="case__more">
+            <summary>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              <span class="when-closed">Read the Case Study</span><span class="when-open">Close the Case Study</span><span class="visually-hidden">: Event-Driven Notifications</span>
+            </summary>
+            <div class="case__detail">
+              <div>
+                <h4>Problem</h4>
+                <p>Recruiters had no signal when a client viewed the candidates they had shared, when records were transferred to them, when a candidate applied twice, or when an export finished.</p>
+                <h4>What I Built</h4>
+                <ul>
+                  <li>Seven in-app and browser-push notification types end to end on the existing pipeline, from PHP producers to Vue 3 notification templates.</li>
+                  <li>Per-template grouping keys with a matching compound index, so a bulk action becomes one notification instead of flooding the bell.</li>
+                  <li>A public endpoint, checked by origin and a job code, that raises client-activity events from a page with no login; its triggers fire once, after page load.</li>
+                </ul>
+                <h4>Pipeline</h4>
+                <ol class="pipeline" aria-label="Notification Pipeline">
+                  <li>PHP Producers</li><li class="arrow" aria-hidden="true">→</li>
+                  <li class="hl">AWS SQS</li><li class="arrow" aria-hidden="true">→</li>
+                  <li>Workers</li><li class="arrow" aria-hidden="true">→</li>
+                  <li class="hl">MongoDB, per Tenant</li><li class="arrow" aria-hidden="true">→</li>
+                  <li>Push + In-App</li>
+                </ol>
+                <h4>Result</h4>
+                <p>8 PRs across 8 repositories, seven merged on the same day. In 2026 I also finished AI Sourcing match notifications, fixing a silent drop in the Python SQS producer.</p>
+              </div>
+            </div>
+          </details>
+        </article>
+      </div>
+
+      <div class="more">
+        <div class="more__head">
+          <h3 id="more-title">More Work</h3>
+          <p>Three more projects, in brief.</p>
+        </div>
+        <div class="more__grid">
+          <article class="mini" id="w7a" aria-labelledby="w7a-title">
+            <div class="case__top"><span class="case__num">07</span><span class="chip">Sole Author</span><span class="case__kicker"><span class="nowrap">Nov – Dec 2024</span></span></div>
+            <h4 id="w7a-title">Job-Board Compliance Across 8 Codebases</h4>
+            <p>Indeed was rejecting job postings that broke its guidelines. I added a job location type and postal code (an in-place column conversion with three regenerated MySQL views and rollback scripts), changed the public REST API contract with OpenAPI docs, and updated Zapier, email placeholders and Indeed-only warnings on the job form. 13 PRs, released in two coordinated waves.</p>
             <ul class="tags" aria-label="Stack"><li>MySQL</li><li>PHP</li><li>REST API</li><li>OpenAPI</li><li>Vue 2</li></ul>
           </article>
-          <article class="card" aria-labelledby="w7b">
-            <div class="card__meta"><span class="card__num">08</span><span class="role-chip">Built my slice</span><span class="card__kicker">Oct 2025 – Apr 2026</span></div>
-            <h3 id="w7b">Vue 2 → Vue 3 migration</h3>
-            <p class="compact__text">On the team moving detail pages from Vue 2 to Vue 3 micro-frontends, I built the Subsidiaries and Invoices widgets (AG Grid, Pinia), a VONQ job-advertising widget, and a resume viewer bridged to the legacy app through cross-app events instead of a rewrite, each with Vitest suites.</p>
+          <article class="mini" id="w7b" aria-labelledby="w7b-title">
+            <div class="case__top"><span class="case__num">08</span><span class="chip">Built</span><span class="case__kicker"><span class="nowrap">Oct 2025 – Apr 2026</span></span></div>
+            <h4 id="w7b-title">Vue 2 → Vue 3 Migration</h4>
+            <p>On the team moving detail pages from Vue 2 to Vue 3 micro-frontends, I built the Subsidiaries and Invoices widgets (AG Grid, Pinia), a VONQ job-advertising widget, and a resume viewer bridged to the legacy app through cross-app events instead of a rewrite, each with Vitest suites.</p>
             <ul class="tags" aria-label="Stack"><li>Vue 3</li><li>TypeScript</li><li>Pinia</li><li>AG Grid</li><li>Vitest</li></ul>
           </article>
-          <article class="card" aria-labelledby="w7c">
-            <div class="card__meta"><span class="card__num">09</span><span class="role-chip">Contributed</span><span class="card__kicker">2026</span></div>
-            <h3 id="w7c">AI-driven development workflow</h3>
-            <p class="compact__text">Contributed to the team's Claude Code workspace of skills and phase commands that take a feature from PRD analysis through HLD/LLD, build and code review. I added safe-update rules to all 13 phase commands: re-fetch a page right before writing, and change only the requested part.</p>
-            <ul class="tags" aria-label="Stack"><li>Claude Code</li><li>Agentic workflows</li><li>Code review</li></ul>
+          <article class="mini" id="w7c" aria-labelledby="w7c-title">
+            <div class="case__top"><span class="case__num">09</span><span class="chip">Contributed</span><span class="case__kicker"><span class="nowrap">2026</span></span></div>
+            <h4 id="w7c-title">AI-Driven Development Workflow</h4>
+            <p>Contributed to the team's Claude Code workspace of skills and phase commands that take a feature from PRD analysis through HLD/LLD, build and code review. I added safe-update rules to all 13 phase commands: re-fetch a page right before writing, and change only the requested part.</p>
+            <ul class="tags" aria-label="Stack"><li>Claude Code</li><li>Agentic Workflows</li><li>Code Review</li></ul>
           </article>
         </div>
-
       </div>
     </div>
   </section>
 
   <section class="section" id="skills" aria-labelledby="skills-title">
     <div class="wrap">
-      <p class="kicker">Skills</p>
-      <h2 id="skills-title">What I work with, honestly rated</h2>
-      <div class="legend">
-        <span><span class="lvl lvl--strong">Strong</span> my main tools</span>
-        <span><span class="lvl lvl--working">Working</span> used in production</span>
-        <span><span class="lvl lvl--light">Light</span> contributions or occasional use</span>
+      <div class="section__head">
+        <p class="eyebrow">Skills</p>
+        <h2 id="skills-title">What I Work with, Honestly Rated</h2>
       </div>
+      <ul class="legend" aria-label="Skill Levels">
+        <li><span class="lvl lvl--strong">Strong</span> My Main Tools</li>
+        <li><span class="lvl lvl--working">Working</span> Used in Shipped Work</li>
+        <li><span class="lvl lvl--light">Light</span> Contributions or Occasional Use</li>
+      </ul>
       <div class="skills">
-        <div class="skill-group">
+        <div class="skill-group" data-peek="PHP, Laravel · Python, FastAPI">
           <h3>Backend</h3>
-          <ul>
-            <li><span>PHP, Laravel / Lumen</span><span class="lvl lvl--strong">Strong</span></li>
-            <li><span>Python, FastAPI<small>since July 2026</small></span><span class="lvl lvl--working">Working</span></li>
-            <li><span>Event-driven systems, queues</span><span class="lvl lvl--working">Working</span></li>
-            <li><span>Java / Spring Boot<small>search-library contributions</small></span><span class="lvl lvl--light">Light</span></li>
-          </ul>
+          <div class="skill-rows" id="skills-backend">
+            <div class="skill-row"><span class="lvl lvl--strong">Strong</span><ul><li>PHP, Laravel / Lumen</li></ul></div>
+            <div class="skill-row"><span class="lvl lvl--working">Working</span><ul><li>Python, FastAPI</li><li>Event-Driven Systems, Queues</li></ul></div>
+            <div class="skill-row"><span class="lvl lvl--light">Light</span><ul><li>Java / Spring Boot <small>search-library contributions</small></li></ul></div>
+          </div>
         </div>
-        <div class="skill-group">
+        <div class="skill-group" data-peek="Vue 3, TypeScript · Vue 2 · React">
           <h3>Frontend</h3>
-          <ul>
-            <li><span>Vue 3, TypeScript, Pinia</span><span class="lvl lvl--strong">Strong</span></li>
-            <li><span>JavaScript, Vue 2</span><span class="lvl lvl--strong">Strong</span></li>
-            <li><span>Next.js / React</span><span class="lvl lvl--light">Light</span></li>
-          </ul>
+          <div class="skill-rows" id="skills-frontend">
+            <div class="skill-row"><span class="lvl lvl--strong">Strong</span><ul><li>Vue 3, TypeScript, Pinia</li><li>JavaScript, Vue 2</li></ul></div>
+            <div class="skill-row"><span class="lvl lvl--working">Working</span><ul><li>Next.js / React</li></ul></div>
+          </div>
         </div>
-        <div class="skill-group">
+        <div class="skill-group" data-peek="SQL / MySQL · Redis · MongoDB">
           <h3>Data</h3>
-          <ul>
-            <li><span>SQL / MySQL<small>window functions, views, query fixes</small></span><span class="lvl lvl--strong">Strong</span></li>
-            <li><span>Redis</span><span class="lvl lvl--working">Working</span></li>
-            <li><span>MongoDB</span><span class="lvl lvl--working">Working</span></li>
-            <li><span>Kafka, SingleStore</span><span class="lvl lvl--light">Light</span></li>
-          </ul>
+          <div class="skill-rows" id="skills-data">
+            <div class="skill-row"><span class="lvl lvl--strong">Strong</span><ul><li>SQL / MySQL <small>window functions, views, query fixes</small></li></ul></div>
+            <div class="skill-row"><span class="lvl lvl--working">Working</span><ul><li>Redis</li><li>MongoDB</li></ul></div>
+            <div class="skill-row"><span class="lvl lvl--light">Light</span><ul><li>Kafka, SingleStore</li></ul></div>
+          </div>
         </div>
-        <div class="skill-group">
-          <h3>Cloud &amp; tools</h3>
-          <ul>
-            <li><span>AWS<small>SQS (incl. FIFO), S3, Bedrock, IAM</small></span><span class="lvl lvl--working">Working</span></li>
-            <li><span>Git / GitHub, Jira, Confluence, Figma</span><span class="lvl lvl--working">Working</span></li>
-            <li><span>Sentry, Flagsmith, SonarCloud, Jenkins</span><span class="lvl lvl--working">Working</span></li>
-          </ul>
+        <div class="skill-group" data-peek="AWS · Git · Sentry">
+          <h3>Cloud &amp; Tools</h3>
+          <div class="skill-rows" id="skills-cloud">
+            <div class="skill-row"><span class="lvl lvl--working">Working</span><ul><li>AWS <small>SQS (incl. FIFO), S3, Bedrock, IAM</small></li><li>Git / GitHub, Jira, Confluence, Figma</li><li>Sentry, Flagsmith, SonarCloud, Jenkins</li></ul></div>
+          </div>
         </div>
-        <div class="skill-group">
+        <div class="skill-group" data-peek="LLM Integration">
           <h3>AI</h3>
-          <ul>
-            <li><span>LLM integration<small>LiteLLM, LLM-as-judge, model fallback, usage caps; since July 2026</small></span><span class="lvl lvl--working">Working</span></li>
-            <li><span>AI-assisted development<small>Claude Code, daily</small></span><span class="lvl lvl--strong">Strong</span></li>
-          </ul>
+          <div class="skill-rows" id="skills-ai">
+            <div class="skill-row"><span class="lvl lvl--working">Working</span><ul><li>LLM Integration <small>LiteLLM, LLM-as-judge, model fallback, usage caps; since July 2026</small></li></ul></div>
+          </div>
         </div>
-        <div class="skill-group">
+        <div class="skill-group" data-peek="Design Docs · Code Review">
           <h3>Practices</h3>
-          <ul>
-            <li><span>Design docs<small>analysis, HLD, LLD</small></span><span class="lvl lvl--strong">Strong</span></li>
-            <li><span>Code review<small>370+ pull requests</small></span><span class="lvl lvl--strong">Strong</span></li>
-            <li><span>Testing<small>pytest, Vitest</small></span><span class="lvl lvl--working">Working</span></li>
-          </ul>
+          <div class="skill-rows" id="skills-practices">
+            <div class="skill-row"><span class="lvl lvl--strong">Strong</span><ul><li>Design Docs <small>analysis, HLD, LLD</small></li><li>Code Review <small>370+ pull requests</small></li><li>AI-Assisted Development <small>Claude Code, daily</small></li></ul></div>
+            <div class="skill-row"><span class="lvl lvl--working">Working</span><ul><li>Testing <small>pytest, Vitest</small></li></ul></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="education" aria-labelledby="edu-title">
-    <div class="wrap">
-      <p class="kicker">Education</p>
-      <h2 id="edu-title">Where I studied</h2>
+  <section class="section section--alt section--tight" id="education" aria-labelledby="edu-title">
+    <div class="wrap edu-layout">
+      <div class="section__head">
+        <p class="eyebrow">Education</p>
+        <h2 id="edu-title">Where I Studied</h2>
+      </div>
       <div class="edu">
         <div>
           <h3>B.Tech, Computer Science</h3>
           <p>Shivajirao Kadam Institute of Technology and Management, Indore</p>
         </div>
         <div class="edu__meta">
-          <span class="role-chip">2019 – 2023</span>
-          <span class="role-chip">CGPA 8.4</span>
+          <span class="chip">2019 – 2023</span>
+          <span class="chip">CGPA 8.4</span>
         </div>
       </div>
     </div>
@@ -892,19 +1504,38 @@
 
   <section class="section" id="contact" aria-labelledby="contact-title">
     <div class="wrap">
-      <p class="kicker">Contact</p>
-      <h2 id="contact-title">Let's talk</h2>
-      <p class="section__lede">Open to full-stack, backend (Python or PHP) and AI-product engineering roles. Available immediately; based in Indore, open to relocating or working remotely.</p>
-      <div class="contact">
-        <a href="mailto:guptaram465691@gmail.com"><span class="contact__label">Email</span><span class="contact__value">guptaram465691@gmail.com</span></a>
-        <a href="https://linkedin.com/in/ramgupta07" rel="noopener" target="_blank"><span class="contact__label">LinkedIn</span><span class="contact__value">linkedin.com/in/ramgupta07</span></a>
-        <a href="https://github.com/RamGupta07" rel="noopener" target="_blank"><span class="contact__label">GitHub</span><span class="contact__value">github.com/RamGupta07</span></a>
-      </div>
-      <div class="contact-cta">
-        <a class="btn btn--primary" href="assets/Ram_Gupta_Resume.pdf" download>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
-          Download resume (PDF)
-        </a>
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Hiring for a <span class="nowrap">Full-Stack</span> or Backend Role?</h2>
+          <p class="contact-card__lede">Open to full-stack, backend (Python or PHP) and AI-product engineering roles. Available immediately; based in Indore, open to relocating or working remotely.</p>
+        </div>
+        <div class="contact-card__aside">
+          <div class="email-box">
+            <span class="email-box__label" id="email-label">Email</span>
+            <div class="email-box__row">
+              <a class="email-box__addr" href="mailto:guptaram465691@gmail.com" aria-describedby="email-label">guptaram465691<wbr>@gmail.com</a>
+              <button class="btn btn--sm copy-btn" id="copy-email" type="button" data-email="guptaram465691@gmail.com">
+                <svg class="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+                <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>
+                <span class="copy-btn__text">Copy</span>
+              </button>
+            </div>
+            <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+          </div>
+          <div class="contact-card__actions">
+            <a class="btn btn--primary" href="assets/Ram_Gupta_Resume.pdf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>
+              Resume (PDF)
+            </a>
+            <a class="btn" href="https://linkedin.com/in/ramgupta07" rel="noopener" target="_blank">LinkedIn
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+            <a class="btn" href="https://github.com/RamGupta07" rel="noopener" target="_blank">GitHub
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -913,31 +1544,191 @@
 <footer class="footer">
   <div class="wrap footer__inner">
     <p>© 2026 Ram Gupta</p>
-    <p>Work code is in private company repositories; projects are described at product level.</p>
+    <ul class="footer__links">
+      <li><a href="https://linkedin.com/in/ramgupta07" rel="noopener" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/RamGupta07" rel="noopener" target="_blank">GitHub</a></li>
+    </ul>
   </div>
 </footer>
+
+<a class="to-top" id="to-top" href="#top" aria-label="Back to Top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</a>
 
 <script>
   (function () {
     var root = document.documentElement;
-    var button = document.getElementById('theme-toggle');
-    var systemDark = window.matchMedia('(prefers-color-scheme: dark)');
-    function currentTheme() {
-      return root.getAttribute('data-theme') || (systemDark.matches ? 'dark' : 'light');
+
+    var themeButton = document.getElementById('theme-toggle');
+    var themeColorMeta = document.querySelector('meta[name="theme-color"]');
+    var themeColors = { light: '#f6f7fa', dark: '#090d16' };
+    function applyTheme(theme) {
+      root.setAttribute('data-theme', theme);
+      themeButton.setAttribute('aria-pressed', String(theme === 'dark'));
+      themeColorMeta.setAttribute('content', themeColors[theme]);
     }
-    function syncButton() {
-      var isDark = currentTheme() === 'dark';
-      button.setAttribute('aria-pressed', String(isDark));
-      button.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
-    }
-    button.addEventListener('click', function () {
-      var nextTheme = currentTheme() === 'dark' ? 'light' : 'dark';
-      root.setAttribute('data-theme', nextTheme);
+    themeButton.addEventListener('click', function () {
+      var nextTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      applyTheme(nextTheme);
       try { localStorage.setItem('theme', nextTheme); } catch (e) {}
-      syncButton();
     });
-    if (systemDark.addEventListener) systemDark.addEventListener('change', syncButton);
-    syncButton();
+    applyTheme(root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light');
+
+    var menuButton = document.getElementById('menu-button');
+    var menu = document.getElementById('mobile-menu');
+    var menuClose = document.getElementById('menu-close');
+    var desktopWidth = window.matchMedia('(min-width: 861px)');
+    var shouldRestoreFocus = true;
+
+    function openMenu() {
+      if (menu.open) return;
+      shouldRestoreFocus = true;
+      menu.showModal();
+      root.classList.add('is-menu-open');
+      menuButton.setAttribute('aria-expanded', 'true');
+    }
+    function closeMenu(restoreFocus) {
+      shouldRestoreFocus = restoreFocus !== false;
+      root.classList.remove('is-menu-open');
+      menuButton.setAttribute('aria-expanded', 'false');
+      if (menu.open) menu.close();
+    }
+    menu.addEventListener('close', function () {
+      root.classList.remove('is-menu-open');
+      menuButton.setAttribute('aria-expanded', 'false');
+      if (shouldRestoreFocus) menuButton.focus();
+    });
+    menuButton.addEventListener('click', openMenu);
+    menuClose.addEventListener('click', function () { closeMenu(true); });
+    menu.addEventListener('click', function (event) {
+      if (event.target === menu) {
+        closeMenu(true);
+        return;
+      }
+      // Section links close the menu first so the browser's own hash scroll runs unlocked.
+      if (event.target.closest('a[href^="#"]')) closeMenu(false);
+    });
+    function closeOnDesktop(event) { if (event.matches && menu.open) closeMenu(false); }
+    if (desktopWidth.addEventListener) desktopWidth.addEventListener('change', closeOnDesktop);
+
+    var spyLinks = Array.prototype.slice.call(document.querySelectorAll('a[data-spy]'));
+    var sections = spyLinks
+      .map(function (link) { return link.getAttribute('href').slice(1); })
+      .filter(function (id, index, ids) { return ids.indexOf(id) === index; })
+      .map(function (id) { return document.getElementById(id); });
+    function setActiveSection(activeId) {
+      spyLinks.forEach(function (link) {
+        if (link.getAttribute('href') === '#' + activeId) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+    }
+    // The active section is the last one whose top has crossed a reading line under the sticky header.
+    function updateActiveSection() {
+      var isAtBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+      if (isAtBottom) return setActiveSection(sections[sections.length - 1].id);
+      var readingLine = window.innerHeight * 0.3;
+      var activeId = null;
+      sections.forEach(function (section) {
+        if (section.getBoundingClientRect().top <= readingLine) activeId = section.id;
+      });
+      setActiveSection(activeId);
+    }
+    if ('IntersectionObserver' in window) {
+      var sectionObserver = new IntersectionObserver(updateActiveSection, { rootMargin: '-30% 0px -69% 0px' });
+      sections.forEach(function (section) { sectionObserver.observe(section); });
+    }
+
+    var toTop = document.getElementById('to-top');
+    var isScrollQueued = false;
+    window.addEventListener('scroll', function () {
+      if (isScrollQueued) return;
+      isScrollQueued = true;
+      window.requestAnimationFrame(function () {
+        isScrollQueued = false;
+        toTop.classList.toggle('is-visible', window.scrollY > window.innerHeight * 1.2);
+        updateActiveSection();
+      });
+    }, { passive: true });
+
+    var copyButton = document.getElementById('copy-email');
+    var copyLabel = copyButton.querySelector('.copy-btn__text');
+    var copyStatus = document.getElementById('copy-status');
+    var copyResetTimer;
+    function copyWithSelection(text) {
+      var field = document.createElement('textarea');
+      field.value = text;
+      field.setAttribute('readonly', '');
+      field.style.position = 'fixed';
+      field.style.opacity = '0';
+      document.body.appendChild(field);
+      field.select();
+      var isCopied = false;
+      try { isCopied = document.execCommand('copy'); } catch (e) {}
+      document.body.removeChild(field);
+      return isCopied ? Promise.resolve() : Promise.reject(new Error('copy failed'));
+    }
+    function copyText(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text).catch(function () { return copyWithSelection(text); });
+      }
+      return copyWithSelection(text);
+    }
+    copyButton.addEventListener('click', function () {
+      clearTimeout(copyResetTimer);
+      copyText(copyButton.dataset.email).then(function () {
+        copyButton.classList.add('is-copied');
+        copyLabel.textContent = 'Copied';
+        copyStatus.textContent = 'Email address copied to the clipboard.';
+      }, function () {
+        copyStatus.textContent = 'Couldn’t copy. Select the address to copy it.';
+      });
+      copyResetTimer = setTimeout(function () {
+        copyButton.classList.remove('is-copied');
+        copyLabel.textContent = 'Copy';
+        copyStatus.textContent = '';
+      }, 3000);
+    });
+
+    // Phones get collapsible skill groups; wider screens show each group under a plain heading.
+    var phoneWidth = window.matchMedia('(max-width: 620px)');
+    var chevronIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>';
+    function setSkillsLayout() {
+      document.querySelectorAll('.skill-group').forEach(function (group) {
+        var heading = group.querySelector('h3');
+        var rows = group.querySelector('.skill-rows');
+        var toggle = heading.querySelector('.skill-toggle');
+        var groupName = toggle ? toggle.querySelector('.skill-toggle__name').textContent : heading.textContent;
+        if (phoneWidth.matches && !toggle) {
+          toggle = document.createElement('button');
+          toggle.type = 'button';
+          toggle.className = 'skill-toggle';
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.setAttribute('aria-controls', rows.id);
+          toggle.innerHTML = '<span class="skill-toggle__name"></span><span class="skill-group__peek" aria-hidden="true"></span>' + chevronIcon;
+          toggle.querySelector('.skill-toggle__name').textContent = groupName;
+          toggle.querySelector('.skill-group__peek').textContent = group.dataset.peek;
+          heading.textContent = '';
+          heading.appendChild(toggle);
+          rows.hidden = true;
+        } else if (!phoneWidth.matches && toggle) {
+          heading.textContent = groupName;
+          rows.hidden = false;
+        }
+      });
+    }
+    document.querySelector('.skills').addEventListener('click', function (event) {
+      var toggle = event.target.closest('.skill-toggle');
+      if (!toggle) return;
+      var isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!isExpanded));
+      document.getElementById(toggle.getAttribute('aria-controls')).hidden = isExpanded;
+    });
+    setSkillsLayout();
+    if (phoneWidth.addEventListener) phoneWidth.addEventListener('change', setSkillsLayout);
+
+    window.addEventListener('beforeprint', function () {
+      document.querySelectorAll('details').forEach(function (details) { details.open = true; });
+    });
   })();
 </script>
 </body>
