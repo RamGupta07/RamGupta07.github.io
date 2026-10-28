@@ -31,7 +31,7 @@ This README ships with the public repo, so it names no internal systems.
 - Every claim on the page comes from my verified career notes (kept outside this repo). If it is not there, it is not on the page.
 - Public page: no internal table, service or repository names, no customer names, no ticket keys, no code, no internal architecture images. The two diagrams are generic inline SVGs.
 - Truthfulness: AI/Python since July 2026; "contributed to" the AI-driven development workspace; no design-doc counts; "investigated 247 bug tickets"; Java only as contributions; only skills I have used in production.
-- Phone number is deliberately left off (it is on the resume PDF).
+- Phone number (+91 83054 23483) is shown in the Contact card (call + WhatsApp) and the mobile menu, at Ram's request.
 - Before every publish, run the banned-term grep from the portfolio plan in my notes against `index.html`.
 
 ## Publish (only with Ram's explicit OK for each step)
